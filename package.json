@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://github.com/MaciejBratko/Fresh_Harvest_Box",
+  "homepage": "https://maciejbratko.github.io/Fresh_Harvest_Box/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Fresh_Harvest_Box/"
