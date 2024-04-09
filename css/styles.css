@@ -93,6 +93,10 @@ header .container {
   height: 24px;
 }
 
+.logo-text {
+  color: #ae1332;
+}
+
 .logo-container {
   display: inline-flex;
   gap: 8px;
@@ -109,9 +113,6 @@ header .container {
 .logo-container a:focus,
 .logo-container a:visited {
   color: #ae1332;
-}
-
-.logo {
 }
 
 .basket {
