@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+  background-color: #ae1332;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}

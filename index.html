@@ -1,133 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Web studio company" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Web studio company" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <!-- Modal -->
-  <div class="modal-your-order">
-    <button class="x-button" type="button">
-      <svg class="x-icon" width="14" height="14">
-        <use href="./images/icons.svg#icon-x"></use>
-      </svg>
-    </button>
-    <h2>
-      Your order
-    </h2>
-    <form>
-      <label>
-        <input type="checkbox" name="order" value="strawberry-basket" checked />
-        <h3>Strawberry Basket</h3>
-        <p>Plant</p>
-        <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
-      </label>
-      <label>
-        <input type="checkbox" name="order" value="apple-basket" />
-        <h3>Apple Basket</h3>
-        <p>Plant</p>
-        <img src="./images/apple-basket.png" alt="apple-basket" />
-      </label>
-      <label>
-        <input type="checkbox" name="order" value="fruits-basket" />
-        <h3>Fruits Basket</h3>
-        <p>Plant</p>
-        <img src="./images/fruits-basket.png" alt="fruits-basket" />
-      </label>
-      <label>
-        <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
-      </label>
-      <label>
-        <input class="form-input" type="email" name="user-email" placeholder="Enter email..." />
-      </label>
-      <label>
-        <input class="form-input" type="number" name="user-card" placeholder="Enter card..." />
-      </label>
-      <label>
-        <textarea class="form-textarea" type="text" name="user-comments" placeholder="Enter comments..."></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-    <img src="./images/banana-woman.png" alt="woman">
-  </div>
-
-
-  <div class="thank-you">
-    <div class="modal-thank-you">
+  <body>
+    <!-- Modal -->
+    <div class="modal-your-order">
       <button class="x-button" type="button">
         <svg class="x-icon" width="14" height="14">
           <use href="./images/icons.svg#icon-x"></use>
         </svg>
       </button>
-      <img src="./images/raspberries.png" alt="Raspberries" />
-      <h2>
-        Thank you
-      </h2>
-      <p>
-        Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and we'll
-        deliver it straight to your doorstep. We appreciate your business and look forward to providing you with the
-        best possible experience!
-      </p>
+      <h2>Your order</h2>
+      <form>
+        <label>
+          <input type="checkbox" name="order" value="strawberry-basket" checked />
+          <h3>Strawberry Basket</h3>
+          <p>Plant</p>
+          <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="apple-basket" />
+          <h3>Apple Basket</h3>
+          <p>Plant</p>
+          <img src="./images/apple-basket.png" alt="apple-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="fruits-basket" />
+          <h3>Fruits Basket</h3>
+          <p>Plant</p>
+          <img src="./images/fruits-basket.png" alt="fruits-basket" />
+        </label>
+        <label>
+          <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
+        </label>
+        <label>
+          <input class="form-input" type="email" name="user-email" placeholder="Enter email..." />
+        </label>
+        <label>
+          <input class="form-input" type="number" name="user-card" placeholder="Enter card..." />
+        </label>
+        <label>
+          <textarea
+            class="form-textarea"
+            type="text"
+            name="user-comments"
+            placeholder="Enter comments..."
+          ></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <img src="./images/banana-woman.png" alt="woman" />
     </div>
-  </div>
 
-  <header>
-    <nav>
-      <ul class="left-nav">
-        <li>
-          <a href="#how-it-works" class="nav-link">How It Works</a>
-        </li>
-        <li>
-          <a href="#fruits" class="nav-link">Fruits</a>
-        </li>
-        <li>
-          <a href="#contacts" class="nav-link">Contacts</a>
-        </li>
-      </ul>
-      <div class="logo-container">
-        <a href="./index.html" class="logo">
-          <svg class="logo-icon" width="16" height="16">
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-          Fresh harvest box
-        </a>
-      </div>
-    </nav>
-    <div>
-      <svg class="basket-icon" width="28" height="28">
-        <use href="./images/icons.svg#icon-basket"></use>
-      </svg>
-      <svg class="menu-icon" width="24" height="24">
-        <use href="./images/icons.svg#icon-menu"></use>
-      </svg>
-    </div>
-
-    <div class="hamburger">
-      <div class="logo-hamburger">
-        <div class="logo-container">
-          <a href="./index.html" class="logo">
-            <svg class="logo-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-            Fresh harvest box
-          </a>
-        </div>
+    <div class="thank-you">
+      <div class="modal-thank-you">
         <button class="x-button" type="button">
-          <svg class="x-icon" width="12" height="12">
+          <svg class="x-icon" width="14" height="14">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
+        <img src="./images/raspberries.png" alt="Raspberries" />
+        <h2>Thank you</h2>
+        <p>
+          Thank you for your order! Our team is preparing your box with fresh, delicious fruits and
+          vegetables, and we'll deliver it straight to your doorstep. We appreciate your business
+          and look forward to providing you with the best possible experience!
+        </p>
       </div>
-      <div class="menu-hamburger">
+    </div>
+
+    <header>
+      <nav>
         <ul class="left-nav">
           <li>
             <a href="#how-it-works" class="nav-link">How It Works</a>
@@ -138,192 +98,255 @@
           <li>
             <a href="#contacts" class="nav-link">Contacts</a>
           </li>
-          <li>
-            <svg class="basket-icon" width="28" height="28">
-              <use href="./images/icons.svg#icon-basket"></use>
-            </svg>
-          </li>
         </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <article class="hero">
-      <h1>fresh harvest box is your one-stop place for a delicious fruit basket</h1>
-      <img src="./images/strawberrys.png" alt="Strawberrys">
-      <img src="./images/banana.png" alt="Bananas">
-      <div class="picture-border">
-        <img src="./images/woman-holding-orange.png" alt="woman-holding-orange">
-      </div>
-      <button class="shop-now-button" type="button">Shop Now</button>
-      <div class="hero-left">
-        <p>Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you
-          are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
-        <div class="watermelon-container">
-          <h2 class="hero-fruit">Fruit</h2>
-          <img src="./images/watermelon.png" alt="watermelon">
-          <p>Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
+        <div class="logo-container">
+          <a href="./index.html" class="logo">
+            <svg class="logo-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            Fresh harvest box
+          </a>
         </div>
-        <div class="hero-right">
-          <div class="strawberry-basket-container">
-            <h2 class="hero-fruit">Fruit</h2>
-            <img src="./images/strawberry-basket.png" alt="strawberry-basket">
-            <p>Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and
-              healthy snack</p>
-          </div>
-          <div class="hero-right-container">
-            <ul class="hero-right-list">
-              <li class="hero-right-block">&#35;organic</li>
-              <li class="hero-right-block">&#35;products</li>
-              <li class="hero-right-block">&#35;basket</li>
-              <li class="hero-right-block">&#35;fruits</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="how-it-works" id="how-it-works">
-      <h2 class="hiw-header">To order your fruit basket, simply follow these easy steps</h2>
-      <p class="hit-paragraph">Our baskets are assembled with care and delivered straight to your doorstep, so you can
-        enjoy the taste of
-        fresh fruit without ever leaving your home. Whether you're looking for a healthy snack or a thoughtful gift, our
-        fruit baskets are the perfect choice.</p>
-      <div class="hiw-steps">
-        <div class="hiw-steps-container">
-          <div class="hiw-first-step">First Step</div>
-          <p class="hiw-step-paragraph">Just choose the fruit you want to order by clicking on the checkboxes next to it
-          </p>
-        </div>
-        <div class="hiw-steps-container">
-          <div class="hiw-second-step">Second Step</div>
-          <p class="hiw-step-paragraph">Click on the basket and fill out the form.</p>
-        </div>
-        <div class="hiw-steps-container">
-          <div class="hiw-third-step">Third Step</div>
-          <p class="hiw-step-paragraph">Sit back and relax! Your fresh fruit basket will be delivered.</p>
-        </div>
-      </div>
-      <img src="./images/owocki.gif" alt="owoce">
-    </article>
-    <article class="fruits" id="fruits">
-      <h2>
-        Organic Fruits
-      </h2>
-      <p>
-        Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, ensuring that you
-        get the freshest and most nutritious produce possible. We offer a wide selection of organic fruits grown without
-        the use of harmful pesticides or chemicals.
-      </p>
-      <section class="fruits-container">
-        <div class="fruit strawberry">
-          <h3 class="fruit-name">Strawberry</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/strawberrys.png" alt="strawberry">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>100 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit banana">
-          <h3 class="fruit-name">Banana</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/banana.png" alt="banana">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>80 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit watermelon">
-          <h3 class="fruit-name">Watermelon</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/watermelon.png" alt="watermelon">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>40 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit lime">
-          <h3 class="fruit-name">Lime</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/lime.png" alt="lime">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>60 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit apple">
-          <h3 class="fruit-name">Apple</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/apple.png" alt="apple">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>50 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit peach">
-          <h3 class="fruit-name">Peach</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/peach.png" alt="peach">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>80 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit plums">
-          <h3 class="fruit-name">Plums</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/plum.png" alt="plums">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>40 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit orange">
-          <h3 class="fruit-name">Orange</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/orange.png" alt="orange">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>60 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit kiwi">
-          <h3 class="fruit-name">Kiwi</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/kiwis.png" alt="kiwi">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>90 UAH/kg</p>
-          </div>
-        </div>
-      </section>
-      <button class="order-button" type="button">
-        <svg class="icon-arrow" width="14" height="14">
-          <use href="./images/icons.svg#icon-arrow"></use>
+      </nav>
+      <div>
+        <svg class="basket-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-basket"></use>
         </svg>
-        Order</button>
-    </article>
+        <svg class="menu-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </div>
 
-    <article class="contacts" id="contacts">
-      <h2>Fresh Harvest Box has got you covered</h2>
-      <img src="./images/kiwi.png" alt="kiwi">
-      <img src="./images/berries.png" alt="berries">
-      <p>
-        Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat
-        healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
-      </p>
-      <form>
-        <label>
-        <input type="email" name="email" placeholder="Enter email...">
-        </label>
-        <button type="button">Send</button>
-      </form>
-    </article>
-  </main>
-  <footer class="footer">
+      <div class="hamburger">
+        <div class="logo-hamburger">
+          <div class="logo-container">
+            <a href="./index.html" class="logo">
+              <svg class="logo-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+              Fresh harvest box
+            </a>
+          </div>
+          <button class="x-button" type="button">
+            <svg class="x-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-hamburger">
+          <ul class="left-nav">
+            <li>
+              <a href="#how-it-works" class="nav-link">How It Works</a>
+            </li>
+            <li>
+              <a href="#fruits" class="nav-link">Fruits</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li>
+              <svg class="basket-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-basket"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="hero">
+        <h1>fresh harvest box is your one-stop place for a delicious fruit basket</h1>
+        <img src="./images/strawberrys.png" alt="Strawberrys" />
+        <img src="./images/banana.png" alt="Bananas" />
+        <div class="picture-border">
+          <img src="./images/woman-holding-orange.png" alt="woman-holding-orange" />
+        </div>
+        <button class="shop-now-button" type="button">Shop Now</button>
+        <div class="hero-left">
+          <p>
+            Our expertly curated fruit baskets are made with the freshest, highest quality fruits
+            available. Whether you are looking for a healthy snack or a gift for a loved one, Fresh
+            Harvest Box has got you covered.
+          </p>
+          <div class="watermelon-container">
+            <h2 class="hero-fruit">Fruit</h2>
+            <img src="./images/watermelon.png" alt="watermelon" />
+            <p>
+              Refreshing and juicy, watermelon is the perfect summer treat and a great source of
+              hydration
+            </p>
+          </div>
+          <div class="hero-right">
+            <div class="strawberry-basket-container">
+              <h2 class="hero-fruit">Fruit</h2>
+              <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+              <p>
+                Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making
+                them a delicious and healthy snack
+              </p>
+            </div>
+            <div class="hero-right-container">
+              <ul class="hero-right-list">
+                <li class="hero-right-block">&#35;organic</li>
+                <li class="hero-right-block">&#35;products</li>
+                <li class="hero-right-block">&#35;basket</li>
+                <li class="hero-right-block">&#35;fruits</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="how-it-works" id="how-it-works">
+        <h2 class="hiw-header">To order your fruit basket, simply follow these easy steps</h2>
+        <p class="hit-paragraph">
+          Our baskets are assembled with care and delivered straight to your doorstep, so you can
+          enjoy the taste of fresh fruit without ever leaving your home. Whether you're looking for
+          a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.
+        </p>
+        <div class="hiw-steps">
+          <div class="hiw-steps-container">
+            <div class="hiw-first-step">First Step</div>
+            <p class="hiw-step-paragraph">
+              Just choose the fruit you want to order by clicking on the checkboxes next to it
+            </p>
+          </div>
+          <div class="hiw-steps-container">
+            <div class="hiw-second-step">Second Step</div>
+            <p class="hiw-step-paragraph">Click on the basket and fill out the form.</p>
+          </div>
+          <div class="hiw-steps-container">
+            <div class="hiw-third-step">Third Step</div>
+            <p class="hiw-step-paragraph">
+              Sit back and relax! Your fresh fruit basket will be delivered.
+            </p>
+          </div>
+        </div>
+        <img src="./images/owocki.gif" alt="owoce" />
+      </article>
+      <article class="fruits" id="fruits">
+        <h2>Organic Fruits</h2>
+        <p>
+          Our organic fruits are hand-picked from local farms and delivered straight to your
+          doorstep, ensuring that you get the freshest and most nutritious produce possible. We
+          offer a wide selection of organic fruits grown without the use of harmful pesticides or
+          chemicals.
+        </p>
+        <section class="fruits-container">
+          <div class="fruit strawberry">
+            <h3 class="fruit-name">Strawberry</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/strawberrys.png" alt="strawberry" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>100 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit banana">
+            <h3 class="fruit-name">Banana</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/banana.png" alt="banana" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>80 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit watermelon">
+            <h3 class="fruit-name">Watermelon</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/watermelon.png" alt="watermelon" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>40 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit lime">
+            <h3 class="fruit-name">Lime</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/lime.png" alt="lime" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>60 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit apple">
+            <h3 class="fruit-name">Apple</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/apple.png" alt="apple" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>50 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit peach">
+            <h3 class="fruit-name">Peach</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/peach.png" alt="peach" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>80 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit plums">
+            <h3 class="fruit-name">Plums</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/plum.png" alt="plums" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>40 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit orange">
+            <h3 class="fruit-name">Orange</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/orange.png" alt="orange" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>60 UAH/kg</p>
+            </div>
+          </div>
+          <div class="fruit kiwi">
+            <h3 class="fruit-name">Kiwi</h3>
+            <p class="plant">Plant</p>
+            <img src="./images/kiwis.png" alt="kiwi" />
+            <img src="./images/shadow.png" alt="shadow" />
+            <div class="price">
+              <p>90 UAH/kg</p>
+            </div>
+          </div>
+        </section>
+        <button class="order-button" type="button">
+          <svg class="icon-arrow" width="14" height="14">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+          Order
+        </button>
+      </article>
+
+      <article class="contacts" id="contacts">
+        <h2>Fresh Harvest Box has got you covered</h2>
+        <img src="./images/kiwi.png" alt="kiwi" />
+        <img src="./images/berries.png" alt="berries" />
+        <p>
+          Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone
+          looking to eat healthier or support local farmers. Order your box today and start enjoying
+          the best that nature has to offer!
+        </p>
+        <form>
+          <label>
+            <input type="email" name="email" placeholder="Enter email..." />
+          </label>
+          <button type="button">Send</button>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
       <div class="container">
         <div class="footer-logo-container">
-          <img class="footer-photo" src="./images/woman-holding-bananas.png" alt="woman holding bananas"/>
+          <img
+            class="footer-photo"
+            src="./images/woman-holding-bananas.png"
+            alt="woman holding bananas"
+          />
           <svg class="footer-logo-icon" width="16" height="16">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
@@ -341,36 +364,39 @@
               <p class="footer-contacts-paragraph">Contacts</p>
             </li>
           </ul>
-        <div class="footer-social-media">
-          <ul class="footer-sm-list">
-            <li class="footer-sm-icon">
-              <svg class="footer-sm-icon-fill" width="40px" height="40px">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="footer-sm-icon">
-              <svg class="footer-sm-icon-fill" width="40px" height="40px">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="footer-sm-icon">
-              <svg class="footer-sm-icon-fill" width="40px" height="40px">
-                <use href="./images/icons.svg#icon-youtube"></use>
-              </svg>
-            </li>
-          </ul>
+          <div class="footer-social-media">
+            <ul class="footer-sm-list">
+              <li class="footer-sm-icon">
+                <svg class="footer-sm-icon-fill" width="40px" height="40px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="footer-sm-icon">
+                <svg class="footer-sm-icon-fill" width="40px" height="40px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="footer-sm-icon">
+                <svg class="footer-sm-icon-fill" width="40px" height="40px">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-adress">
+            <ul class="footer-adress-list">
+              <li><a class="footer-a-li" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
+              <li>
+                <a class="footer-a-li" href=""
+                  >1678 S. Pioneer Road<br />
+                  Salt Lake City<br />
+                  UT 84104</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-adress">
-         <ul class="footer-adress-list">
-          <li><a class="footer-a-li" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-          <li><a class="footer-a-li" href="">1678 S. Pioneer Road<br />
-          Salt Lake City<br />
-          UT 84104</a></li>
-         </ul>
-        </div>
-      </div> 
-    </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
