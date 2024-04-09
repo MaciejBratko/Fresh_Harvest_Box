@@ -1,30 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Web studio company" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Modal -->
-    <div class="your-order"></div>
-    <div class="thank-you"></div>
-    <header></header>
-    <main>
-      <article class="hero"></article>
-      <article class="how-it-works"></article>
-      <article class="fruits"></article>
-      <article class="contacts"></article>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Web studio company" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="your-order">
+    <div class="modal-your-order">
+      <button class="x-button" type="button">
+        <svg class="x-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h2>
+        Your order
+      </h2>
+      <form>
+        <label>
+          <input type="checkbox" name="order" value="strawberry-basket" checked />
+          <h3>Strawberry Basket</h3>
+          <p>Plant</p>
+          <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="apple-basket" />
+          <h3>Apple Basket</h3>
+          <p>Plant</p>
+          <img src="./images/apple-basket.png" alt="apple-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="fruits-basket" />
+          <h3>Fruits Basket</h3>
+          <p>Plant</p>
+          <img src="./images/fruits-basket.png" alt="fruits-basket" />
+        </label>
+        <label>
+          <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
+        </label>
+        <label>
+          <input class="form-input" type="email" name="user-email" placeholder="Enter email..." />
+        </label>
+        <label>
+          <input class="form-input" type="number" name="user-card" placeholder="Enter card..." />
+        </label>
+        <label>
+          <textarea class="form-textarea" type="text" name="user-comments" placeholder="Enter comments..."></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <img src="./images/banana-woman.png" alt="woman">
+    </div>
+  </div>
+
+  <div class="thank-you">
+    <div class="modal-thank-you">
+      <button class="x-button" type="button">
+        <svg class="x-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <img src="./images/raspberries.png" alt="Raspberries" />
+      <h2>
+        Thank you
+      </h2>
+      <p>
+        Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and we'll
+        deliver it straight to your doorstep. We appreciate your business and look forward to providing you with the
+        best possible experience!
+      </p>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="left-nav">
+        <li>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li>
+          <a href="#fruits" class="nav-link">Fruits</a>
+        </li>
+        <li>
+          <a href="#contacts" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+      <div class="logo-container">
+        <a href="./index.html" class="logo">
+          <svg class="logo-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          Fresh harvest box
+        </a>
+      </div>
+    </nav>
+    <div>
+      <svg class="basket-icon" width="28" height="28">
+        <use href="./images/icons.svg#icon-basket"></use>
+      </svg>
+      <svg class="menu-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </div>
+
+    <div class="hamburger">
+      <div class="logo-hamburger">
+        <div class="logo-container">
+          <a href="./index.html" class="logo">
+            <svg class="logo-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            Fresh harvest box
+          </a>
+        </div>
+        <button class="x-button" type="button">
+          <svg class="x-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-hamburger">
+        <ul class="left-nav">
+          <li>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+          </li>
+          <li>
+            <a href="#fruits" class="nav-link">Fruits</a>
+          </li>
+          <li>
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+          <li>
+            <svg class="basket-icon" width="28" height="28">
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="hero">
+      <h1>fresh harvest box is your one-stop place for a delicious fruit basket</h1>
+      <img src="./images/strawberrys.png" alt="Strawberrys">
+      <img src="./images/banana.png" alt="Bananas">
+      <div class="picture-border">
+        <img src="./images/woman-holding-orange.png" alt="woman-holding-orange">
+      </div>
+      <button class="shop-now-button" type="button">Shop Now</button>
+      <div class="hero-left">
+        <p>Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you
+          are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
+        <div class="watermelon-container">
+          <h2 class="hero-fruit">Fruit</h2>
+          <img src="./images/watermelon.png" alt="watermelon">
+          <p>Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
+        </div>
+        <div class="hero-right">
+          <div class="strawberry-basket-container">
+            <h2 class="hero-fruit">Fruit</h2>
+            <img src="./images/strawberry-basket.png" alt="strawberry-basket">
+            <p>Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and
+              healthy snack</p>
+          </div>
+          <div class="hero-right-container">
+            <ul class="hero-right-list">
+              <li class="hero-right-block">&#35;organic</li>
+              <li class="hero-right-block">&#35;products</li>
+              <li class="hero-right-block">&#35;basket</li>
+              <li class="hero-right-block">&#35;fruits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="how-it-works" id="how-it-works"></article>
+    <article class="fruits" id="fruits"></article>
+    <article class="contacts" id="contacts"></article>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
