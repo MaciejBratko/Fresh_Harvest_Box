@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Web studio company" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Modal -->
-    <div class="your-order"></div>
-    <div class="thank-you"></div>
-    <header></header>
-    <main>
-      <article class="hero"></article>
-      <article class="how-it-works"></article>
-      <article class="fruits"></article>
-      <article class="contacts"></article>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Web studio company" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="your-order"></div>
+  <div class="thank-you"></div>
+  <header>
+    <nav>
+      <ul class="left-nav">
+        <li>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li>
+          <a href="#fruits" class="nav-link">Fruits</a>
+        </li>
+        <li>
+          <a href="#contacts" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+      <div class="logo-container">
+        <a href="./index.html" class="logo">
+          <svg class="logo-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          Fresh harvest box
+        </a>
+      </div>
+    </nav>
+    <div>
+      <svg class="basket-icon" width="28" height="28">
+        <use href="./images/icons.svg#icon-basket"></use>
+      </svg>
+      <svg class="menu-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </div>
+  </header>
+  <main>
+    <article class="hero"></article>
+    <article class="how-it-works" id="how-it-works"></article>
+    <article class="fruits" id="fruits"></article>
+    <article class="contacts" id="contacts"></article>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
