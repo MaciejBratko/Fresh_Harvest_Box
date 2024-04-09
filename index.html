@@ -15,8 +15,72 @@
 
 <body>
   <!-- Modal -->
-  <div class="your-order"></div>
-  <div class="thank-you"></div>
+  <div class="your-order">
+    <div class="modal-your-order">
+      <button class="x-button" type="button">
+        <svg class="x-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h2>
+        Your order
+      </h2>
+      <form>
+        <label>
+          <input type="checkbox" name="order" value="strawberry-basket" checked />
+          <h3>Strawberry Basket</h3>
+          <p>Plant</p>
+          <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="apple-basket" />
+          <h3>Apple Basket</h3>
+          <p>Plant</p>
+          <img src="./images/apple-basket.png" alt="apple-basket" />
+        </label>
+        <label>
+          <input type="checkbox" name="order" value="fruits-basket" />
+          <h3>Fruits Basket</h3>
+          <p>Plant</p>
+          <img src="./images/fruits-basket.png" alt="fruits-basket" />
+        </label>
+        <label>
+          <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
+        </label>
+        <label>
+          <input class="form-input" type="email" name="user-email" placeholder="Enter email..." />
+        </label>
+        <label>
+          <input class="form-input" type="number" name="user-card" placeholder="Enter card..." />
+        </label>
+        <label>
+          <textarea class="form-textarea" type="text" name="user-comments" placeholder="Enter comments..."></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <img src="./images/banana-woman.png" alt="woman">
+    </div>
+  </div>
+
+  <div class="thank-you">
+    <div class="modal-thank-you">
+      <button class="x-button" type="button">
+        <svg class="x-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <img src="./images/raspberries.png" alt="Raspberries" />
+      <h2>
+        Thank you
+      </h2>
+      <p>
+        Thank you for your order! Our team is preparing your box with fresh, delicious fruits and vegetables, and we'll
+        deliver it straight to your doorstep. We appreciate your business and look forward to providing you with the
+        best possible experience!
+      </p>
+    </div>
+  </div>
+
   <header>
     <nav>
       <ul class="left-nav">
