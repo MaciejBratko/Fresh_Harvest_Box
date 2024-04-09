@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 *,
 ::before,
 ::after {
@@ -12,6 +17,103 @@ body {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.04em;
-  text-align: left;
   color: white;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 335px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu-hamburger {
+  display: none;
+}
+
+header {
+  margin: 0;
+  padding: 13px;
+}
+
+header {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  height: 24px;
+}
+
+.logo-container {
+  display: inline-flex;
+  gap: 8px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.logo-container a:active,
+.logo-container a:hover,
+.logo-container a:focus,
+.logo-container a:visited {
+  color: #ae1332;
+}
+
+.logo {
+}
+
+.basket {
+  align-self: flex-end;
 }
