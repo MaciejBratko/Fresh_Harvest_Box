@@ -53,4 +53,12 @@ body {
 
 .ul-footer-contacts {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-sm-list,
+.footer-address-list {
+  list-style: none;
 }
