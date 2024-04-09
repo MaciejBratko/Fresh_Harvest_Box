@@ -62,3 +62,16 @@ body {
 .footer-address-list {
   list-style: none;
 }
+
+.footer-sm-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-sm-icon {
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 8px;
+}
