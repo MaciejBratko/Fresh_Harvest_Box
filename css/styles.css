@@ -187,6 +187,7 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 70px 0px #0000001a;
 }
 
 .hiw-step-item {
