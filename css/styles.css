@@ -93,6 +93,12 @@ header .container {
   height: 24px;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo-text {
   color: #ae1332;
 }
@@ -116,12 +122,12 @@ header .container {
 }
 
 .basket {
-  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 /* Modal Thank You */
-
 
 .modal-thank-you {
   position: fixed;
@@ -184,8 +190,8 @@ header .container {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: Fixed (295px)px;
-  height: Hug (150px)px;
+  width: Fixed (295px) px;
+  height: Hug (150px) px;
   top: 236px;
   left: 20px;
   gap: 14px;
@@ -205,7 +211,6 @@ header .container {
   line-height: 28px;
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 1);
-
 }
 
 .thank-you-paragraph {
@@ -232,8 +237,8 @@ header .container {
   flex-direction: column;
   justify-content: center;
   padding-top: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 .footer-photo {
@@ -287,6 +292,15 @@ header .container {
   border: solid 1px;
   border-radius: 10px;
   padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sm-icon-fill {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .footer-a-li {
