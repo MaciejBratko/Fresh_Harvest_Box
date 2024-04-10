@@ -118,3 +118,108 @@ header .container {
 .basket {
   align-self: flex-end;
 }
+
+
+/* Modal Thank You */
+
+
+.modal-thank-you {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 335px;
+  height: 426px;
+  background-color: rgba(224, 63, 94, 1);
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.x-button {
+  position: absolute;
+  top: 20px;
+  left: 291px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(224, 63, 94, 1);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.x-icon {
+  stroke: rgba(255, 255, 255, 1);
+  width: 24px;
+  height: 24px;
+  top: 6px;
+  left: 6px;
+  gap: 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.thank-you-raspberries {
+  position: fixed;
+  width: 207px;
+  height: 176px;
+  top: 40px;
+  left: 64px;
+  gap: 0px;
+  opacity: 0px;
+  padding: 0;
+}
+
+.thank-you-text {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: Fixed (295px)px;
+  height: Hug (150px)px;
+  top: 236px;
+  left: 20px;
+  gap: 14px;
+  opacity: 0px;
+}
+
+.thank-you-header {
+  text-align: center;
+  width: 100%;
+  height: 28px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-paragraph {
+  text-align: center;
+  width: 295px;
+  height: 108px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+}
