@@ -160,6 +160,7 @@ header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 .hiw-steps-container {
@@ -170,19 +171,22 @@ header .container {
   left: 20px;
   background-color: white;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hiw-step-paragraph {
   width: 145px;
   height: 72px;
-font-weight: 400;
-color: black;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: -0.04em;
-display: flex;
-justify-content: center;
-align-items: center;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hiw-step-item {
@@ -232,46 +236,47 @@ align-items: center;
 }
 
 .hiw-name-one {
-width: 73px;
-height: 24px;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: -0.04em;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 73px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hiw-name-two {
   width: 100px;
-height: 24px;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: -0.04em;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hiw-name-three {
   width: 80px;
-height: 24px;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: -0.04em;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hiw-foto {
   width: 335px;
   height: 476px;
+  object-fit: cover;
+  object-position: 50% 50%;
   left: 20px;
   border-radius: 20px;
   text-align: center;
 }
-
