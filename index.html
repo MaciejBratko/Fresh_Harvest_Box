@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
@@ -206,107 +210,127 @@
       </div>
       <img src="./images/owocki.gif" alt="owoce">
     </article>
-    <article class="fruits" id="fruits">
-      <h2>
-        Organic Fruits
-      </h2>
-      <p>
+
+    <!-- ========================= FRUIT SECTION (ROSTEK ) =======================================-->
+  <section class="section-fruits" id="fruits">
+    <div class="container">
+
+      <h2 class="fruits-title">Organic Fruits</h2>
+      <p class="fruits-undertitle">
         Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, ensuring that you
         get the freshest and most nutritious produce possible. We offer a wide selection of organic fruits grown without
         the use of harmful pesticides or chemicals.
       </p>
+    
+        <ul class="fruits-list"> 
+          <li class="fruits-item strawberry">
+            <h3 class="fruits-item-title">Strawberry</h3>
+            <p class="fruits-item-type">Plant</p>
+             <img
+               src="./images/strawberrys.png"
+               alt="Strawberry"
+               width="295"
+              />
+            <p class="fruits-price">100 UAH/kg</p>
+          </li>
 
-      <!-- ========================= FRUIT SECTION =======================================-->
-      <section class="fruits-container">
-        <div class="fruit strawberry">
-          <h3 class="fruit-name">Strawberry</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/strawberrys.png" alt="strawberry">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>100 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit banana">
-          <h3 class="fruit-name">Banana</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/banana.png" alt="banana">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>80 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit watermelon">
-          <h3 class="fruit-name">Watermelon</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/watermelon.png" alt="watermelon">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>40 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit lime">
-          <h3 class="fruit-name">Lime</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/lime.png" alt="lime">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>60 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit apple">
-          <h3 class="fruit-name">Apple</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/apple.png" alt="apple">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>50 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit peach">
-          <h3 class="fruit-name">Peach</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/peach.png" alt="peach">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>80 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit plums">
-          <h3 class="fruit-name">Plums</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/plum.png" alt="plums">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>40 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit orange">
-          <h3 class="fruit-name">Orange</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/orange.png" alt="orange">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>60 UAH/kg</p>
-          </div>
-        </div>
-        <div class="fruit kiwi">
-          <h3 class="fruit-name">Kiwi</h3>
-          <p class="plant">Plant</p>
-          <img src="./images/kiwis.png" alt="kiwi">
-          <img src="./images/shadow.png" alt="shadow">
-          <div class="price">
-            <p>90 UAH/kg</p>
-          </div>
-        </div>
-      </section>
-      <button class="order-button" type="button">
-        <svg class="icon-arrow" width="14" height="14">
-          <use href="./images/icons.svg#icon-arrow"></use>
-        </svg>
-        Order</button>
-    </article>
+       <li class="fruits-item banana">
+        <h3 class="fruits-item-title">Banana</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/banana.png"
+          alt="Banana"
+          width="295"
+        />
+        <p class="fruits-price">80 UAH/kg</p>
+      </li>
+        
+       <li class="fruits-item watermelon">
+        <h3 class="fruits-item-title">Watermelon</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/watermelon.png"
+          alt="Watermelon"
+          width="295"
+        />
+        <p class="fruits-price">40 UAH/kg</p>
+      </li>
 
+      <li class="fruits-item lime">
+        <h3 class="fruits-item-title">Lime</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/lime.png"
+          alt="Lime"
+          width="295"
+        />
+        <p class="fruits-price">60 UAH/kg</p>
+      </li>
+      
+      <li class="fruits-item apple">
+        <h3 class="fruits-item-title">Apple</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/apple.png"
+          alt="Apple"
+          width="295"
+        />
+        <p class="fruits-price">50 UAH/kg</p>
+      </li>
+      
+        <li class="fruits-item peach">
+        <h3 class="fruits-item-title">Peach</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/peach.png"
+          alt="Peach"
+          width="295"
+        />
+        <p class="fruits-price">80 UAH/kg</p>
+      </li>
+
+       <li class="fruits-item plums">
+        <h3 class="fruits-item-title">Plums</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/plum.png"
+          alt="Plum"
+          width="295"
+        />
+        <p class="fruits-price">80 UAH/kg</p>
+      </li>
+
+       <li class="fruits-item orange">
+        <h3 class="fruits-item-title">Orange</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/orange.png"
+          alt="orange"
+          width="295"
+        />
+        <p class="fruits-price">60 UAH/kg</p>
+      </li>
+
+      <li class="fruits-item kiwi">
+        <h3 class="fruits-item-title">Kiwi</h3>
+        <p class="fruits-item-type">Plant</p>
+         <img
+          src="./images/kiwis.png"
+          alt="kiwi"
+          width="295"
+        />
+        <p class="fruits-price">90 UAH/kg</p>
+      </li>
+      </ul>
+      <button type="button" class="button-order" data-order-open>
+      <svg class="icon-arrow" width="14" height="14">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+      <span class="button-name">ORDER</span>
+      </button>
+    </div>
+  </section>
+<!-- ==================CONTACTS SECTION ==============================-->
     <article class="contacts" id="contacts">
       <h2>Fresh Harvest Box has got you covered</h2>
       <img src="./images/kiwi.png" alt="kiwi">
