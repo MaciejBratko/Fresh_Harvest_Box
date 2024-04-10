@@ -118,3 +118,160 @@ header .container {
 .basket {
   align-self: flex-end;
 }
+
+/* How it works */
+
+.how-it-works {
+  width: 335px;
+  height: 608px;
+  left: 20px;
+  gap: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiw-first {
+  width: 335px;
+  height: 188px;
+  gap: 14px;
+}
+
+.hiw-header {
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.hit-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.hiw-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hiw-steps-container {
+  width: 335px;
+  height: 112px;
+  gap: 14px;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.hiw-step-paragraph {
+  width: 145px;
+  height: 72px;
+font-weight: 400;
+color: black;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.04em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hiw-step-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 295px;
+  height: 72px;
+  top: 20px;
+  left: 20px;
+  gap: 14px;
+}
+
+.hiw-first-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 48px;
+  border-radius: 200px;
+  padding: 15px, 42px;
+  gap: 10px;
+  background-color: #ae1332;
+}
+
+.hiw-second-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 48px;
+  border-radius: 200px;
+  gap: 10px;
+  background-color: #a1c864;
+}
+
+.hiw-third-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 48px;
+  border-radius: 200px;
+  gap: 10px;
+  background-color: #f5ce13;
+}
+
+.hiw-name-one {
+width: 73px;
+height: 24px;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.04em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hiw-name-two {
+  width: 100px;
+height: 24px;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.04em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hiw-name-three {
+  width: 80px;
+height: 24px;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.04em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hiw-foto {
+  width: 335px;
+  height: 476px;
+  left: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
