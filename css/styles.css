@@ -261,6 +261,7 @@ header .container {
 
 .footer-contacts {
   color: #ae1332;
+  padding-bottom: 80px;
 }
 
 .ul-footer-contacts {
@@ -306,4 +307,7 @@ header .container {
 .footer-a-li {
   color: #ae1332;
   text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
