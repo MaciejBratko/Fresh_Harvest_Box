@@ -480,11 +480,10 @@ header .container {
 .contacts {
   padding-top: 80px;
   padding-bottom: 80px;
-
 }
 
 .contacts-header {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
@@ -493,19 +492,10 @@ header .container {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  
-
-
-
-
-
-
-
-
 }
 
 .contacts-paragraf {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
 
@@ -516,11 +506,9 @@ header .container {
   color: #fff;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   display: none;
-
 }
 
 .contact-form {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -530,12 +518,9 @@ header .container {
   height: 48px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: none;
-
-
 }
 
 .send-button {
-
   border-radius: 100px;
   padding: 15px 35px;
   width: 102px;
@@ -545,7 +530,6 @@ header .container {
   border: none;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: #fff;
-
 }
 
 .email-area {
@@ -553,7 +537,7 @@ header .container {
   border: none;
   text-align: center;
 
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
 
@@ -561,18 +545,13 @@ header .container {
   line-height: 1.28571;
   letter-spacing: -0.04em;
   color: #fff;
-
-
 }
 
 .kiwi-img {
   max-width: 100%;
   height: 476px;
-  
-
-
-
 }
 
 .berries-img {
-  display: none;}
+  display: none;
+}
