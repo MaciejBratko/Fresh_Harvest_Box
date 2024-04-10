@@ -205,7 +205,7 @@ header .container {
   line-height: 28px;
   letter-spacing: -0.04em;
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 .thank-you-paragraph {
@@ -213,7 +213,7 @@ header .container {
   width: 295px;
   height: 108px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
@@ -221,5 +221,5 @@ header .container {
   letter-spacing: -0.04em;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
 }
+
