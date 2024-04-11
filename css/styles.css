@@ -331,6 +331,10 @@ header .container {
   gap: 14px;
 }
 
+br {
+  display: none;
+}
+
 .hiw-header {
   text-transform: uppercase;
   font-family: DM Sans;
@@ -555,3 +559,42 @@ header .container {
 .berries-img {
   display: none;
 }
+/* media */
+
+@media (min-width: 768px) {
+.how-it-works {
+  width: 624px;
+  height: 633px;
+}
+
+.hiw-first {
+  width: 624px;
+  height: 156px;
+  gap: 14px;
+}
+
+.hiw-foto {
+  width: 704px;
+  left: 32px;
+}
+
+br {
+  display: block;
+}
+}
+
+@media (min-width: 1280px) {
+  .how-it-works {
+    width: 1216px;
+  }
+
+  .hiw-steps {
+    flex-direction: row;
+  }
+
+  .hiw-foto {
+    width: 860px;
+    height: 476px;
+    left: 210px;
+  }
+  }
