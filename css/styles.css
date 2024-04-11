@@ -744,12 +744,8 @@ header .container {
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-<<<<<<< Updated upstream
   justify-content: center;
   align-items: center;
-=======
-
->>>>>>> Stashed changes
 }
 
 .contacts-header {
@@ -764,26 +760,12 @@ header .container {
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   top: 43px;
-<<<<<<< Updated upstream
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> Stashed changes
 }
 
 .contacts-paragraf {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-
   line-height: 18px;
   line-height: 1.28571;
   letter-spacing: -0.04em;
@@ -838,7 +820,8 @@ header .container {
 }
 
 .berries-img {
-  display: none;}
+  display: none;
+}
 
 /* Phone  > */
 .container {
