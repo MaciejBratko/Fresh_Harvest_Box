@@ -350,7 +350,7 @@ header .container {
   gap: 14px;
 }
 
-.hiw-header br {
+br {
   display: none;
 }
 
@@ -539,7 +539,6 @@ header .container {
     padding-bottom: 144px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .section-fruits {
     padding-bottom: 150px;
@@ -786,14 +785,8 @@ header .container {
 /* contacts */
 
 .contacts {
-  padding-left: 20;
-  padding-right: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contacts-header {
@@ -806,14 +799,13 @@ header .container {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: 43px;
 }
 
 .contacts-paragraf {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
+
   line-height: 18px;
   line-height: 1.28571;
   letter-spacing: -0.04em;
@@ -870,7 +862,6 @@ header .container {
 .berries-img {
   display: none;
 }
-
 /* media */
 
 @media (min-width: 768px) {
