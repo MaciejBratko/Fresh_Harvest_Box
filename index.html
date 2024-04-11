@@ -5,19 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Web studio company" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <meta name="WebStudio" content="width=device-width, initial-scale=1.0" />
+    <meta name="Fresh Harvest Box" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Fresh Harvest Box</title>
   </head>
 
   <body>
@@ -34,19 +35,82 @@
           <input type="checkbox" name="order" value="strawberry-basket" checked />
           <h3>Strawberry Basket</h3>
           <p>Plant</p>
-          <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images-webp/strawberry-basket-modal-d.webp    1x,
+                ./images-webp/strawberry-basket-modal-d@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images-webp/strawberry-basket-modal-t.webp    1x,
+                ./images-webp/strawberry-basket-modal-t@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images-webp/strawberry-basket-modal.webp    1x,
+                ./images-webp/strawberry-basket-modal@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+          </picture>
         </label>
         <label>
           <input type="checkbox" name="order" value="apple-basket" />
           <h3>Apple Basket</h3>
           <p>Plant</p>
-          <img src="./images/apple-basket.png" alt="apple-basket" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="./images-webp/apple-basket-d.webp 1x, ./images-webp/apple-basket-d@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images-webp/apple-basket-t.webp 1x, ./images-webp/apple-basket-t@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images-webp/apple-basket.webp 1x, ./images-webp/apple-basket@2x.webp 2x"
+              type="image/webp"
+            />
+            <img src="./images/apple-basket.png" alt="apple-basket" />
+          </picture>
         </label>
         <label>
           <input type="checkbox" name="order" value="fruits-basket" />
           <h3>Fruits Basket</h3>
           <p>Plant</p>
-          <img src="./images/fruits-basket.png" alt="fruits-basket" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images-webp/fruits-basket-d.webp    1x,
+                ./images-webp/fruits-basket-d@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images-webp/fruits-basket-t.webp    1x,
+                ./images-webp/fruits-basket-t@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="./images-webp/fruits-basket.webp 1x, ./images-webp/fruits-basket@2x.webp 2x"
+              type="image/webp"
+            />
+            <img src="./images/fruits-basket.png" alt="fruits-basket" />
+          </picture>
         </label>
         <label>
           <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
@@ -67,16 +131,41 @@
         </label>
         <button type="submit">Submit</button>
       </form>
-      <img src="./images/banana-woman.png" alt="woman" />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images-webp/banana-woman-transparent-t.webp    1x,
+            ./images-webp/banana-woman-transparent-t@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img src="./images/banana-woman.png" alt="woman" />
+      </picture>
     </div>
-
     <div class="modal-thank-you is-open">
       <button class="x-button" type="button">
         <svg class="x-icon" width="14" height="14">
           <use href="./images/icons.svg#icon-x"></use>
         </svg>
       </button>
-      <img class="thank-you-raspberries" src="./images/raspberries.png" alt="Raspberries" />
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images-webp/raspberries-d.webp 1x, ./images-webp/raspberries-d@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images-webp/raspberries-t.webp 1x, ./images-webp/raspberries-t@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="./images-webp/raspberries.webp 1x, ./images-webp/raspberries@2x.webp 2x"
+          type="image/webp"
+        />
+        <img class="thank-you-raspberries" src="./images/raspberries.png" alt="Raspberries" />
+      </picture>
       <div class="thank-you-text">
         <h2 class="thank-you-header">Thank you</h2>
         <p class="thank-you-paragraph">
@@ -289,7 +378,6 @@
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </div>
-
         <div class="hamburger visually-hidden">
           <div class="logo-hamburger">
             <div class="logo-container">
@@ -319,10 +407,85 @@
       <div class="container">
         <article class="hero">
           <h1>fresh harvest box is your one-stop place for a delicious fruit basket</h1>
-          <img src="./images/strawberrys.png" alt="Strawberrys" />
-          <img src="./images/banana.png" alt="Bananas" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images-webp/strawberries-for-blur-effect-d.webp    1x,
+                ./images-webp/strawberries-for-blur-effect-d@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images-webp/strawberries-for-blur-effect-t.webp    1x,
+                ./images-webp/strawberries-for-blur-effect-t@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images-webp/strawberries-for-blur-effect.webp    1x,
+                ./images-webp/strawberries-for-blur-effect@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="./images/strawberrys.png" alt="Strawberrys" />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images-webp/banana-for-blur-effect-d.webp    1x,
+                ./images-webp/banana-for-blur-effect-d@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images-webp/banana-for-blur-effect-t.webp    1x,
+                ./images-webp/banana-for-blur-effect-t@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images-webp/banana-for-blur-effect.webp    1x,
+                ./images-webp/banana-for-blur-effect@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="./images/banana.png" alt="Bananas" />
+          </picture>
           <div class="picture-border">
-            <img src="./images/woman-holding-orange.png" alt="woman-holding-orange" />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images-webp/woman-holding-orange-d.webp    1x,
+                  ./images-webp/woman-holding-orange-d@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images-webp/woman-holding-orange-t.webp    1x,
+                  ./images-webp/woman-holding-orange-t@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images-webp/woman-holding-orange.webp    1x,
+                  ./images-webp/woman-holding-orange@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img src="./images/woman-holding-orange.png" alt="woman-holding-orange" />
+            </picture>
           </div>
           <button class="shop-now-button" type="button">Shop Now</button>
           <div class="hero-left">
@@ -333,7 +496,32 @@
             </p>
             <div class="watermelon-container">
               <h2 class="hero-fruit">Fruit</h2>
-              <img src="./images/watermelon.png" alt="watermelon" />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images-webp/watermelon-hero-d.webp    1x,
+                    ./images-webp/watermelon-hero-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images-webp/watermelon-hero-t.webp    1x,
+                    ./images-webp/watermelon-hero-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images-webp/watermelon-hero.webp    1x,
+                    ./images-webp/watermelon-hero@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img src="./images/watermelon.png" alt="watermelon" />
+              </picture>
               <p>
                 Refreshing and juicy, watermelon is the perfect summer treat and a great source of
                 hydration
@@ -342,7 +530,32 @@
             <div class="hero-right">
               <div class="strawberry-basket-container">
                 <h2 class="hero-fruit">Fruit</h2>
-                <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images-webp/strawberry-basket-d.webp    1x,
+                      ./images-webp/strawberry-basket-d@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images-webp/strawberry-basket-t.webp    1x,
+                      ./images-webp/strawberry-basket-t@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images-webp/strawberry-basket.webp    1x,
+                      ./images-webp/strawberry-basket@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
+                </picture>
                 <p>
                   Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making
                   them a delicious and healthy snack
@@ -361,7 +574,10 @@
         </article>
         <article class="how-it-works" id="how-it-works">
           <div class="hiw-first">
-            <h2 class="hiw-header">To order your fruit basket, simply follow these easy steps</h2>
+            <h2 class="hiw-header">
+              To order your fruit basket,<br />
+              simply follow these easy steps
+            </h2>
             <p class="hit-paragraph">
               Our baskets are assembled with care and delivered straight to your doorstep, so you
               can enjoy the taste of fresh fruit without ever leaving your home. Whether you're
@@ -542,104 +758,234 @@
           </div>
 <<<<<<< Updated upstream
         </article>
-        <article class="fruits" id="fruits">
-          <h2>Organic Fruits</h2>
-          <p>
-            Our organic fruits are hand-picked from local farms and delivered straight to your
-            doorstep, ensuring that you get the freshest and most nutritious produce possible. We
-            offer a wide selection of organic fruits grown without the use of harmful pesticides or
-            chemicals.
-          </p>
-          <section class="fruits-container">
-            <div class="fruit strawberry">
-              <h3 class="fruit-name">Strawberry</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/strawberrys.png" alt="strawberry" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>100 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit banana">
-              <h3 class="fruit-name">Banana</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/banana.png" alt="banana" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>80 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit watermelon">
-              <h3 class="fruit-name">Watermelon</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/watermelon.png" alt="watermelon" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>40 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit lime">
-              <h3 class="fruit-name">Lime</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/lime.png" alt="lime" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>60 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit apple">
-              <h3 class="fruit-name">Apple</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/apple.png" alt="apple" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>50 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit peach">
-              <h3 class="fruit-name">Peach</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/peach.png" alt="peach" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>80 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit plums">
-              <h3 class="fruit-name">Plums</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/plum.png" alt="plums" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>40 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit orange">
-              <h3 class="fruit-name">Orange</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/orange.png" alt="orange" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>60 UAH/kg</p>
-              </div>
-            </div>
-            <div class="fruit kiwi">
-              <h3 class="fruit-name">Kiwi</h3>
-              <p class="plant">Plant</p>
-              <img src="./images/kiwis.png" alt="kiwi" />
-              <img src="./images/shadow.png" alt="shadow" />
-              <div class="price">
-                <p>90 UAH/kg</p>
-              </div>
-            </div>
-          </section>
-          <button class="order-button" type="button">
-            <svg class="icon-arrow" width="14" height="14">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-            Order
-          </button>
-        </article>
+        <section class="section-fruits" id="fruits">
+          <div class="container">
+            <h2 class="fruits-title">Organic Fruits</h2>
+            <p class="fruits-undertitle">
+              Our organic fruits are hand-picked from local farms and delivered straight to your
+              doorstep, ensuring that you get the freshest and most nutritious produce possible. We
+              offer a wide selection of organic fruits grown without the use of harmful pesticides
+              or chemicals.
+            </p>
+            <ul class="fruits-list">
+              <li class="fruits-item strawberry">
+                <h3 class="fruits-item-title">Strawberry</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images-webp/strawberrys-d.webp    1x,
+                      ./images-webp/strawberrys-d@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images-webp/strawberrys-t.webp    1x,
+                      ./images-webp/strawberrys-t@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/strawberrys.webp 1x, ./images-webp/strawberrys@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/strawberrys.png" alt="Strawberry" width="295" />
+                </picture>
+                <p class="fruits-price">100 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item banana">
+                <h3 class="fruits-item-title">Banana</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/banana-d.webp 1x, ./images-webp/banana-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/banana-t.webp 1x, ./images-webp/banana-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/banana.webp 1x, ./images-webp/banana@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/banana.png" alt="Banana" width="295" />
+                </picture>
+                <p class="fruits-price">80 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item watermelon">
+                <h3 class="fruits-item-title">Watermelon</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images-webp/watermelon-d.webp    1x,
+                      ./images-webp/watermelon-d@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images-webp/watermelon-t.webp    1x,
+                      ./images-webp/watermelon-t@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/watermelon.webp 1x, ./images-webp/watermelon@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/watermelon.png" alt="Watermelon" width="295" />
+                </picture>
+                <p class="fruits-price">40 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item lime">
+                <h3 class="fruits-item-title">Lime</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/lime-d.webp 1x, ./images-webp/lime-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/lime-t.webp 1x, ./images-webp/lime-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/lime.webp 1x, ./images-webp/lime@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/lime.png" alt="Lime" width="295" />
+                </picture>
+                <p class="fruits-price">60 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item apple">
+                <h3 class="fruits-item-title">Apple</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/apple-d.webp 1x, ./images-webp/apple-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/apple-t.webp 1x, ./images-webp/apple-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/apple.webp 1x, ./images-webp/apple@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/apple.png" alt="Apple" width="295" />
+                </picture>
+                <p class="fruits-price">50 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item peach">
+                <h3 class="fruits-item-title">Peach</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/peach-d.webp 1x, ./images-webp/peach-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/peach-t.webp 1x, ./images-webp/peach-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/peach.webp 1x, ./images-webp/peach@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/peach.png" alt="Peach" width="295" />
+                </picture>
+                <p class="fruits-price">80 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item plums">
+                <h3 class="fruits-item-title">Plums</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/plum-d.webp 1x, ./images-webp/plum-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/plum-t.webp 1x, ./images-webp/plum-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/plum.webp 1x, ./images-webp/plum@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/plum.png" alt="Plum" width="295" />
+                </picture>
+                <p class="fruits-price">80 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item orange">
+                <h3 class="fruits-item-title">Orange</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/orange-d.webp 1x, ./images-webp/orange-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images-webp/orange-t.webp 1x, ./images-webp/orange-t@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images-webp/orange.webp 1x, ./images-webp/orange@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/orange.png" alt="orange" width="295" />
+                </picture>
+                <p class="fruits-price">60 UAH/kg</p>
+              </li>
+
+              <li class="fruits-item kiwi">
+                <h3 class="fruits-item-title">Kiwi</h3>
+                <p class="fruits-item-type">Plant</p>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="./images-webp/kiwi-d.webp 1x, ./images-webp/kiwi-d@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img src="./images/kiwis.png" alt="kiwi" width="295" />
+                </picture>
+                <p class="fruits-price">90 UAH/kg</p>
+              </li>
+            </ul>
+            <button type="button" class="button-order" data-order-open>
+              <svg class="icon-arrow" width="14" height="14">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <span class="button-name">ORDER</span>
+            </button>
+          </div>
+        </section>
         <article class="contacts" id="contacts">
           <h2 class="contacts-header">
             Fresh Harvest Box <br />
@@ -845,11 +1191,36 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo-container">
-          <img
-            class="footer-photo"
-            src="./images/woman-holding-bananas.png"
-            alt="woman holding bananas"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images-webp/woman-holding-bananas-d.webp    1x,
+                ./images-webp/woman-holding-bananas-d@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images-webp/woman-holding-bananas-t.webp    1x,
+                ./images-webp/woman-holding-bananas-t@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images-webp/woman-holding-bananas.webp    1x,
+                ./images-webp/woman-holding-bananas@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="footer-photo"
+              src="./images/woman-holding-bananas.png"
+              alt="woman holding bananas"
+            />
+          </picture>
           <div class="svg-logo-container">
             <svg class="footer-logo-icon" width="16" height="16">
               <use href="./images/icons.svg#icon-logo"></use>

@@ -21,12 +21,17 @@ body {
   line-height: 18px;
   letter-spacing: -0.04em;
   color: white;
+  margin: 0;
 }
 
 .container {
   padding-left: 20px;
   padding-right: 20px;
   min-width: 335px;
+}
+
+main {
+  display: block;
 }
 
 h1,
@@ -39,10 +44,14 @@ p {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul {
-  list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
@@ -52,7 +61,12 @@ img {
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -144,6 +158,7 @@ header .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 999;
 }
 
 .is-open {
@@ -319,13 +334,14 @@ header .container {
 
 .how-it-works {
   width: 335px;
-  height: 608px;
+  /* height: 688px; */
   left: 20px;
   gap: 44px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .hiw-first {
@@ -472,6 +488,11 @@ header .container {
   align-items: center;
 }
 
+.hiw-foto-container {
+  width: 335px;
+  height: 476px;
+}
+
 .hiw-foto {
   width: 335px;
   height: 476px;
@@ -480,6 +501,32 @@ header .container {
   left: 20px;
   border-radius: 20px;
   text-align: center;
+}
+
+/* Phone  > */
+.container {
+  max-width: 375px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Tablet and > */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Desktop  and > */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 /* FRUIT SECTION */
@@ -735,6 +782,7 @@ header .container {
     gap: 24px;
   }
 }
+
 /* contacts */
 
 .contacts {
@@ -823,28 +871,42 @@ header .container {
   display: none;
 }
 
-/* Phone  > */
-.container {
-  max-width: 375px;
+/* media */
 
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+@media (min-width: 768px) {
+  .how-it-works {
+    width: 624px;
+    height: 633px;
+  }
 
-/* Tablet and > */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .hiw-first {
+    width: 624px;
+    height: 156px;
+    gap: 14px;
+  }
+
+  .hiw-foto {
+    width: 704px;
+    left: 32px;
+  }
+
+  br {
+    display: block;
   }
 }
 
-/* Desktop  and > */
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
+@media (min-width: 1280px) {
+  .how-it-works {
+    width: 1216px;
+  }
+
+  .hiw-steps {
+    flex-direction: row;
+  }
+
+  .hiw-foto {
+    width: 860px;
+    height: 476px;
+    left: 210px;
   }
 }
