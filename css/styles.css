@@ -246,6 +246,289 @@ header .container {
   color: rgba(255, 255, 255, 1);
 }
 
+/* Hero */
+.hero {
+  height: 1844px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-header {
+  width: 335px;
+  height: 118px;
+  top: 56px;
+  /* left: 20px; */
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-family: inherit;
+  padding: 0px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.hero-stawberrys {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 56px;
+  left: 299px;
+  filter: blur(2px);
+  z-index: 1;
+}
+
+.hero-bananas {
+  position: absolute;
+  width: 66px;
+  top: 116px;
+  left: 13px;
+  transform: rotate(-20deg);
+  filter: blur(2px);
+  z-index: 1;
+}
+
+.hero-woman {
+  position: relative;
+  top: 116px;
+  background-color: #ae1332;
+  width: 334px;
+  height: 509px;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-woman::before {
+  border-radius: 500px;
+  background-image: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+  z-index: -1;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  content: '';
+}
+
+.hero-woman-img {
+  border-radius: 500px;
+  width: 311px;
+  height: 484px;
+}
+
+.shop-now-button {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 610px;
+  /* left: 155px; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.shop-now-text {
+  position: relative;
+  width: 55px;
+  height: 40px;
+  transform: rotate(-20deg);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ae1332;
+}
+
+.shop-now-text:hover,
+.shop-now-text:focus {
+  color: rgba(164, 203, 102, 1);
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-paragraph {
+  width: 279px;
+  height: 90px;
+  top: 734px;
+  left: 28px;
+  position: absolute;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: inherit;
+}
+
+.watermelon-container {
+  position: absolute;
+  top: 868px;
+  left: 43px;
+  width: 249px;
+  height: 387px;
+  border-radius: 500px;
+  background-color: rgba(164, 203, 102, 1);
+}
+
+.hero-fruit {
+  display: block;
+  position: relative;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  width: 24px;
+  height: 14px;
+  top: 28px;
+  left: 112px;
+}
+
+.hero-watermelon {
+  position: relative;
+  width: 200px;
+  height: 172px;
+  top: 103px;
+  left: 24px;
+}
+
+.hero-shadow {
+  position: absolute;
+  width: 239px;
+  height: 38px;
+  top: 228px;
+  left: 5px;
+}
+
+.hero-watermelon-paragraph {
+  display: flex;
+  position: absolute;
+  top: 277px;
+  left: 47px;
+  width: 155px;
+  height: 70px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero-right-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: absolute;
+  top: 1299px;
+  left: 35px;
+  width: 279px;
+}
+
+.hero-right-block {
+  display: block;
+  width: 125px;
+  height: 38px;
+  padding-top: 12px;
+  border-radius: 1000px;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+}
+
+.strawberry-basket-container {
+  position: absolute;
+  top: 1427px;
+  left: 43px;
+  width: 249px;
+  height: 387px;
+  border-radius: 500px;
+  background-color: rgba(245, 206, 19, 1);
+}
+
+.hero-fruit-second {
+  position: relative;
+  width: 24px;
+  height: 14px;
+  top: 28px;
+  left: 112px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.hero-stawberrys-basket {
+  position: absolute;
+  width: 162px;
+  height: 185px;
+  top: 61px;
+  left: 43px;
+}
+
+.hero-stawberrys-paragraph {
+  position: absolute;
+  width: 163px;
+  height: 84px;
+  top: 263px;
+  left: 43px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.hero-shadow-second {
+  position: absolute;
+  width: 239px;
+  height: 38px;
+  top: 210px;
+  left: 10px;
+}
+
+/* Footer */
 .footer {
   background-color: #ffffff;
 }
