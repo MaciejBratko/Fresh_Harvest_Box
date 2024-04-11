@@ -480,10 +480,10 @@ header .container {
 .contacts {
   padding-top: 80px;
   padding-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-header {
@@ -496,7 +496,10 @@ header .container {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  
+  position: relative;
+  top: 43px;
+
+
 
 
 
@@ -571,11 +574,12 @@ header .container {
 .kiwi-img {
   max-width: 100%;
   height: 476px;
-  
+
 
 
 
 }
 
 .berries-img {
-  display: none;}
+  display: none;
+}
