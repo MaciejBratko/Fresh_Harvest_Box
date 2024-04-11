@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
+=======
+html {
+  scroll-behavior: auto;
+}
+
+>>>>>>> Stashed changes
 * {
   padding: 0;
   margin: 0;
@@ -331,6 +338,13 @@ header .container {
   gap: 14px;
 }
 
+<<<<<<< Updated upstream
+=======
+br {
+  /* display: none; */
+}
+
+>>>>>>> Stashed changes
 .hiw-header {
   text-transform: uppercase;
   font-family: DM Sans;
@@ -475,15 +489,304 @@ header .container {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Phone  > */
+.container {
+  max-width: 375px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Tablet and > */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Desktop  and > */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* FRUIT SECTION */
+.section-fruits {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-fruits {
+    padding-bottom: 144px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-fruits {
+    padding-bottom: 150px;
+  }
+}
+
+.fruits-title {
+  margin-bottom: 14px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: white;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fruits-undertitle {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 44px;
+  max-width: 547px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: white;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.fruits-item-title {
+  margin-bottom: 7px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  letter-spacing: -0.04em;
+
+  color: white;
+}
+
+.fruits-item-type {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+
+  color: white;
+}
+
+.fruits-price {
+  position: absolute;
+  bottom: 24px;
+  width: 126px;
+  height: 42px;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.04em;
+
+  color: #ae1332;
+  background-color: white;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fruits-price:focus,
+.fruits-price:hover {
+  background-color: lightgrey;
+}
+
+.fruits-item {
+  position: relative;
+  border-radius: 20px;
+  padding-top: 64px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  height: 465px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item {
+    padding-right: 47px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item img {
+    margin-left: 23px;
+  }
+}
+
+.strawberry {
+  background-color: #f8766b;
+}
+
+.banana {
+  background-color: #edd251;
+}
+
+.watermelon {
+  background-color: #9dc262;
+}
+
+.lime {
+  background-color: #bfd663;
+}
+
+.apple {
+  background-color: #e93f29;
+}
+
+.peach {
+  background-color: #db4f4b;
+}
+
+.plums {
+  background-color: #9b5366;
+}
+
+@media only screen and (max-width: 767px) {
+  .plums {
+    display: none;
+  }
+}
+
+.orange {
+  background-color: #f47f4c;
+}
+
+@media only screen and (max-width: 767px) {
+  .orange {
+    display: none;
+  }
+}
+
+.kiwi {
+  background-color: #98b37e;
+}
+
+@media only screen and (max-width: 1279px) {
+  .kiwi {
+    display: none;
+  }
+}
+
+.button-order {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: #9dc262;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite both;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .button-order {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.icon-arrow {
+  fill: white;
+  transform: rotate(14deg);
+}
+
+.button-order:hover,
+.button-order:focus {
+  color: #9dc262;
+  background-color: white;
+}
+
+.icon-arrow:hover,
+.icon-arrow:focus {
+  fill: #9dc262;
+}
+
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 44px;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-list {
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-list {
+    gap: 24px;
+  }
+}
+
+>>>>>>> Stashed changes
 /* contacts */
 
 .contacts {
+  padding-left: 20;
+  padding-right: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
+<<<<<<< Updated upstream
   justify-content: center;
   align-items: center;
+=======
+
+>>>>>>> Stashed changes
 }
 
 .contacts-header {
@@ -498,6 +801,7 @@ header .container {
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   top: 43px;
+<<<<<<< Updated upstream
 
 
 
@@ -508,6 +812,8 @@ header .container {
 
 
 
+=======
+>>>>>>> Stashed changes
 }
 
 .contacts-paragraf {
@@ -582,4 +888,311 @@ header .container {
 
 .berries-img {
   display: none;
+<<<<<<< Updated upstream
+=======
+}
+
+.br-3 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-left: 32;
+    padding-right: 32px;
+    padding-top: 144x;
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .contacts-header {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 43px;
+  }
+
+  .contacts-paragraf {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+
+
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 292px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+
+  }
+
+  .send-button {
+    border-radius: 100px;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #9dc162;
+    border: none;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+  }
+
+  .email-area {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+
+  .paragraf-input {
+    width: 492px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 144px;
+  }
+
+  .images-position {
+    width: 704px;
+    height: 559px;
+
+  }
+
+  .berries-img {
+    display: flex;
+  }
+
+  .img-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .br-1 {
+    display: none;
+  }
+
+  .br-2 {
+    display: none;
+  }
+
+  .br-3 {
+    display: flex;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .contacts {
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .contacts-header {
+    font-weight: 500;
+    font-size: 64px;
+
+    line-height: 64px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 43px;
+  }
+
+  .contacts-paragraf {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+
+    display: flex;
+
+
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 292px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+
+  }
+
+  .send-button {
+    border-radius: 100px;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #9dc162;
+    border: none;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+  }
+
+  .email-area {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+
+  .paragraf-input {
+    width: 492px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 80px;
+
+  }
+
+  .images-position {
+    width: 1216px;
+    height: 591px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .kiwi-img {
+    border-radius: 20px;
+    width: 792px;
+    height: 502px;
+  }
+
+  .berries-img {
+    display: flex;
+    border-radius: 20px;
+    width: 400px;
+    height: 502px;
+  }
+
+  .img-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .br-1 {
+    display: none;
+  }
+
+  .br-2 {
+    display: none;
+  }
+
+  .br-3 {
+    display: flex;
+  }
+
+}
+
+
+
+/* media */
+
+@media (min-width: 768px) {
+  .how-it-works {
+    width: 624px;
+    height: 633px;
+  }
+
+  .hiw-first {
+    width: 624px;
+    height: 156px;
+    gap: 14px;
+  }
+
+  .hiw-foto {
+    width: 704px;
+    left: 32px;
+  }
+
+  br {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .how-it-works {
+    width: 1216px;
+  }
+
+  .hiw-steps {
+    flex-direction: row;
+  }
+
+  .hiw-foto {
+    width: 860px;
+    height: 476px;
+    left: 210px;
+  }
+>>>>>>> Stashed changes
 }
