@@ -22,126 +22,203 @@
 
   <body>
     <!-- Modal -->
-    <div class="modal-your-order container">
-      <button class="x-button" type="button">
-        <svg class="x-icon" width="14" height="14">
-          <use href="./images/icons.svg#icon-x"></use>
-        </svg>
-      </button>
-      <h2>Your order</h2>
-      <form>
-        <label>
-          <input type="checkbox" name="order" value="strawberry-basket" checked />
-          <h3>Strawberry Basket</h3>
-          <p>Plant</p>
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./images-webp/strawberry-basket-modal-d.webp    1x,
-                ./images-webp/strawberry-basket-modal-d@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images-webp/strawberry-basket-modal-t.webp    1x,
-                ./images-webp/strawberry-basket-modal-t@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./images-webp/strawberry-basket-modal.webp    1x,
-                ./images-webp/strawberry-basket-modal@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
-          </picture>
-        </label>
-        <label>
-          <input type="checkbox" name="order" value="apple-basket" />
-          <h3>Apple Basket</h3>
-          <p>Plant</p>
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="./images-webp/apple-basket-d.webp 1x, ./images-webp/apple-basket-d@2x.webp 2x"
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./images-webp/apple-basket-t.webp 1x, ./images-webp/apple-basket-t@2x.webp 2x"
-              type="image/webp"
-            />
-            <source
-              srcset="./images-webp/apple-basket.webp 1x, ./images-webp/apple-basket@2x.webp 2x"
-              type="image/webp"
-            />
-            <img src="./images/apple-basket.png" alt="apple-basket" />
-          </picture>
-        </label>
-        <label>
-          <input type="checkbox" name="order" value="fruits-basket" />
-          <h3>Fruits Basket</h3>
-          <p>Plant</p>
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./images-webp/fruits-basket-d.webp    1x,
-                ./images-webp/fruits-basket-d@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images-webp/fruits-basket-t.webp    1x,
-                ./images-webp/fruits-basket-t@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="./images-webp/fruits-basket.webp 1x, ./images-webp/fruits-basket@2x.webp 2x"
-              type="image/webp"
-            />
-            <img src="./images/fruits-basket.png" alt="fruits-basket" />
-          </picture>
-        </label>
-        <label>
-          <input class="form-input" type="text" name="user-name" placeholder="Enter full name..." />
-        </label>
-        <label>
-          <input class="form-input" type="email" name="user-email" placeholder="Enter email..." />
-        </label>
-        <label>
-          <input class="form-input" type="number" name="user-card" placeholder="Enter card..." />
-        </label>
-        <label>
-          <textarea
-            class="form-textarea"
-            type="text"
-            name="user-comments"
-            placeholder="Enter comments..."
-          ></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images-webp/banana-woman-transparent-t.webp    1x,
-            ./images-webp/banana-woman-transparent-t@2x.webp 2x
-          "
-          type="image/webp"
-        />
-        <img src="./images/banana-woman.png" alt="woman" />
-      </picture>
+    <!-- Modal -->
+    <div class="modal-your-order container is-open">
+      <div class="scroll">
+        <button class="x-button" type="button">
+          <svg class="x-icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h2 class="your-order">Your order</h2>
+        <form class="form-your-order">
+          <label>
+            <div class="fruits-box strawberry">
+              <input class="input" type="checkbox" name="order" value="strawberry-basket" checked />
+              <h3 class="fruits">Strawberry Basket</h3>
+              <p class="plant">Plant</p>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images-webp/strawberry-basket-modal-d.webp    1x,
+                    ./images-webp/strawberry-basket-modal-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images-webp/strawberry-basket-modal-t.webp    1x,
+                    ./images-webp/strawberry-basket-modal-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images-webp/strawberry-basket-modal.webp    1x,
+                    ./images-webp/strawberry-basket-modal@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="your-order-img-strawberry"
+                  src="./images/strawberry-basket.png"
+                  alt="strawberry-basket"
+                  height="95px"
+                  width="88"
+                />
+              </picture>
+            </div>
+          </label>
+          <div class="fruits-box apple">
+            <label>
+              <input class="input" type="checkbox" name="order" value="apple-basket" />
+              <h3 class="fruits">Apple Basket</h3>
+              <p class="plant">Plant</p>
+              <img
+                class="your-order-img-apple"
+                src="./images/apple-basket.png"
+                alt="apple-basket"
+                height="95px"
+                width="106"
+              />
+              <input class="input" type="checkbox" name="order" value="apple-basket" />
+              <h3 class="fruits">Apple Basket</h3>
+              <p class="plant">Plant</p>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images-webp/apple-basket-d.webp    1x,
+                    ./images-webp/apple-basket-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images-webp/apple-basket-t.webp    1x,
+                    ./images-webp/apple-basket-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images-webp/apple-basket.webp 1x, ./images-webp/apple-basket@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="your-order-img-apple"
+                  src="./images/apple-basket.png"
+                  alt="apple-basket"
+                  height="95px"
+                  width="106"
+                />
+              </picture>
+            </label>
+          </div>
+          <div class="fruits-box fruit">
+            <label>
+              <input class="input" type="checkbox" name="order" value="fruits-basket" />
+              <h3 class="fruits">Fruits Basket</h3>
+              <p class="plant">Plant</p>
+              <img
+                class="your-order-img"
+                src="./images/fruits-basket.png"
+                alt="fruits-basket"
+                height="95px"
+                width="107"
+              />
+              <input class="input" type="checkbox" name="order" value="fruits-basket" />
+              <h3 class="fruits">Fruits Basket</h3>
+              <p class="plant">Plant</p>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images-webp/fruits-basket-d.webp    1x,
+                    ./images-webp/fruits-basket-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images-webp/fruits-basket-t.webp    1x,
+                    ./images-webp/fruits-basket-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images-webp/fruits-basket.webp    1x,
+                    ./images-webp/fruits-basket@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="your-order-img"
+                  src="./images/fruits-basket.png"
+                  alt="fruits-basket"
+                  height="95px"
+                  width="107"
+                />
+              </picture>
+            </label>
+          </div>
+          <div class="form-input-container">
+            <label>
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                placeholder="Enter full name..."
+                required
+              />
+            </label>
+            <label>
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                placeholder="Enter email..."
+                required
+              />
+            </label>
+            <label>
+              <input
+                class="form-input"
+                type="number"
+                name="user-card"
+                placeholder="Enter card..."
+                required
+              />
+            </label>
+            <label>
+              <textarea
+                class="form-textarea"
+                type="text"
+                name="user-comments"
+                placeholder="Enter comments..."
+              ></textarea>
+            </label>
+          </div>
+          <button class="submit" type="submit">Submit</button>
+        </form>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images-webp/banana-woman-transparent-t.webp    1x,
+              ./images-webp/banana-woman-transparent-t@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img class="banana-woman" src="./images/banana-woman.png" alt="woman" />
+        </picture>
+      </div>
     </div>
+
     <div class="modal-thank-you is-open">
       <button class="x-button" type="button">
         <svg class="x-icon" width="14" height="14">
