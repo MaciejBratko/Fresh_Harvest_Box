@@ -1020,67 +1020,12 @@ header .container {
     padding-left: 32px;
     padding-right: 32px;
   }
-
-  .ul-footer-contacts {
-    justify-content: start;
-    padding-left: 71px;
-  }
-
-  .svg-logo-container {
-    justify-content: start;
-    padding-left: 96.5px;
-  }
-
-  .footer-logo-container {
-    padding-top: 136px;
-  }
-
-  .set {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .icons-address {
-    padding-top: 118px;
-    margin-left: 171px;
-  }
 }
 
 /* Desktop  and > */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-
-  .set-desctop {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .set {
-    padding-bottom: 80px;
-  }
-
-  .footer-logo-container {
-    padding-top: 80px;
-    margin-right: 243px;
-  }
-
-  .footer-contacts {
-    padding-top: 164px;
-    padding-bottom: 0;
-  }
-
-  .ul-footer-contacts {
-    padding-left: 0;
-  }
-
-  .icons-address {
-    padding-top: 80px;
-  }
-
-  .footer-sm-list {
-    margin-bottom: 40px;
   }
 }
 
