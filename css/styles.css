@@ -156,6 +156,12 @@ header .container {
   border-radius: 20px;
   z-index: 9999;
   overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.modal-your-order::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .modal-content {
@@ -248,7 +254,7 @@ header .container {
   height: auto;
 }
 
-.fruit-option input[type="checkbox"] {
+.fruit-option input[type='checkbox'] {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -261,7 +267,7 @@ header .container {
   cursor: pointer;
 }
 
-.fruit-option input[type="checkbox"]:checked {
+.fruit-option input[type='checkbox']:checked {
   background-color: #fff;
 }
 
