@@ -1427,18 +1427,18 @@ header .container {
     flex-direction: row;
     gap: 16px;
   }
+}
+.br-1 {
+  display: none;
+}
 
-  .br-1 {
-    display: none;
-  }
+.br-2 {
+  display: none;
+}
 
-  .br-2 {
-    display: none;
-  }
-
-  .br-3 {
-    display: flex;
-  }
+.br-3 {
+  display: flex;
+}
 
 @media only screen and (min-width: 768px) {
   footer {
@@ -1519,4 +1519,4 @@ header .container {
     padding: 0;
     align-self: auto;
   }
-
+}
