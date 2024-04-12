@@ -762,7 +762,6 @@ header .container {
   flex-direction: row;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 24px;
 }
 
 .footer-logo {
