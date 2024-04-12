@@ -1,0 +1,16 @@
+  <div class="modal-thank-you is-open">
+    <button class="x-button" type="button">
+      <svg class="x-icon" width="14" height="14">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <img class="thank-you-raspberries" src="./images/raspberries.png" alt="Raspberries" />
+    <div class="thank-you-text">
+    <h2 class="thank-you-header">Thank you</h2>
+    <p class="thank-you-paragraph">
+      Thank you for your order! Our team is preparing your box with fresh, delicious fruits and
+      vegetables, and we'll deliver it straight to your doorstep. We appreciate your business
+      and look forward to providing you with the best possible experience!
+    </p>
+    </div>
+  </div>
