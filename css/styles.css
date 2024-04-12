@@ -803,11 +803,17 @@ header .container {
 
 .footer-sm-icon {
   border: solid 1px;
+  border-color: #ae1332;
   border-radius: 10px;
   padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-sm-icon:hover,
+.footer-sm-icon:focus {
+  background-color: rgba(174, 19, 50, 0.1);
 }
 
 .footer-sm-icon-fill {
@@ -1014,12 +1020,67 @@ header .container {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .ul-footer-contacts {
+    justify-content: start;
+    padding-left: 71px;
+  }
+
+  .svg-logo-container {
+    justify-content: start;
+    padding-left: 96.5px;
+  }
+
+  .footer-logo-container {
+    padding-top: 136px;
+  }
+
+  .set {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icons-address {
+    padding-top: 118px;
+    margin-left: 171px;
+  }
 }
 
 /* Desktop  and > */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+
+  .set-desctop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .set {
+    padding-bottom: 80px;
+  }
+
+  .footer-logo-container {
+    padding-top: 80px;
+    margin-right: 243px;
+  }
+
+  .footer-contacts {
+    padding-top: 164px;
+    padding-bottom: 0;
+  }
+
+  .ul-footer-contacts {
+    padding-left: 0;
+  }
+
+  .icons-address {
+    padding-top: 80px;
+  }
+
+  .footer-sm-list {
+    margin-bottom: 40px;
   }
 }
 
