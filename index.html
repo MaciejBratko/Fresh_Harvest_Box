@@ -244,9 +244,12 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container container-hero">
         <article class="hero">
-          <h1>fresh harvest box is your one-stop place for a delicious fruit basket</h1>
+          <h1 class="hero-header">
+            fresh harvest box <br />
+            is your one-stop place for a delicious fruit basket
+          </h1>
           <picture>
             <source
               media="(min-width: 1280px)"
@@ -271,7 +274,7 @@
               "
               type="image/webp"
             />
-            <img src="./images/strawberrys.png" alt="Strawberrys" />
+            <img class="hero-stawberrys" src="./images/strawberrys.png" alt="Strawberrys" />
           </picture>
           <picture>
             <source
@@ -297,9 +300,9 @@
               "
               type="image/webp"
             />
-            <img src="./images/banana.png" alt="Bananas" />
+            <img class="hero-bananas" src="./images/banana.png" alt="Bananas" />
           </picture>
-          <div class="picture-border">
+          <div class="hero-woman">
             <picture>
               <source
                 media="(min-width: 1280px)"
@@ -324,12 +327,18 @@
                 "
                 type="image/webp"
               />
-              <img src="./images/woman-holding-orange.png" alt="woman-holding-orange" />
+              <img
+                class="hero-woman-img"
+                src="./images/woman-holding-orange.png"
+                alt="woman-holding-orange"
+              />
             </picture>
           </div>
-          <button class="shop-now-button" type="button">Shop Now</button>
+          <button class="shop-now-button" type="button">
+            <div class="shop-now-text">Shop Now</div>
+          </button>
           <div class="hero-left">
-            <p>
+            <p class="hero-paragraph">
               Our expertly curated fruit baskets are made with the freshest, highest quality fruits
               available. Whether you are looking for a healthy snack or a gift for a loved one,
               Fresh Harvest Box has got you covered.
@@ -360,56 +369,92 @@
                   "
                   type="image/webp"
                 />
-                <img src="./images/watermelon.png" alt="watermelon" />
+                <img class="hero-watermelon" src="./images/watermelon.png" alt="watermelon" />
               </picture>
-              <p>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images-webp/shadow-d.webp 1x, ./images-webp/shadow-d@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images-webp/shadow-t.webp 1x, ./images-webp/shadow-t@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images-webp/shadow.webp 1x, ./images-webp/shadow@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img class="hero-shadow" src="./images/shadow.png" alt="shadow" />
+              </picture>
+              <p class="hero-watermelon-paragraph">
                 Refreshing and juicy, watermelon is the perfect summer treat and a great source of
                 hydration
               </p>
             </div>
-            <div class="hero-right">
-              <div class="strawberry-basket-container">
-                <h2 class="hero-fruit">Fruit</h2>
-                <picture>
-                  <source
-                    media="(min-width: 1280px)"
-                    srcset="
-                      ./images-webp/strawberry-basket-d.webp    1x,
-                      ./images-webp/strawberry-basket-d@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images-webp/strawberry-basket-t.webp    1x,
-                      ./images-webp/strawberry-basket-t@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images-webp/strawberry-basket.webp    1x,
-                      ./images-webp/strawberry-basket@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img src="./images/strawberry-basket.png" alt="strawberry-basket" />
-                </picture>
-                <p>
-                  Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making
-                  them a delicious and healthy snack
-                </p>
-              </div>
-              <div class="hero-right-container">
-                <ul class="hero-right-list">
-                  <li class="hero-right-block">&#35;organic</li>
-                  <li class="hero-right-block">&#35;products</li>
-                  <li class="hero-right-block">&#35;basket</li>
-                  <li class="hero-right-block">&#35;fruits</li>
-                </ul>
-              </div>
+          </div>
+          <div class="hero-right">
+            <div class="strawberry-basket-container">
+              <h2 class="hero-fruit-second">Fruit</h2>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images-webp/strawberry-basket-d.webp    1x,
+                    ./images-webp/strawberry-basket-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images-webp/strawberry-basket-t.webp    1x,
+                    ./images-webp/strawberry-basket-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images-webp/strawberry-basket.webp    1x,
+                    ./images-webp/strawberry-basket@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="hero-stawberrys-basket"
+                  src="./images/strawberry-basket.png"
+                  alt="strawberry-basket"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images-webp/shadow-d.webp 1x, ./images-webp/shadow-d@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images-webp/shadow-t.webp 1x, ./images-webp/shadow-t@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images-webp/shadow.webp 1x, ./images-webp/shadow@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img class="hero-shadow-second" src="./images/shadow.png" alt="shadow" />
+              </picture>
+              <p class="hero-stawberrys-paragraph">
+                Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making
+                them a delicious and healthy snack
+              </p>
             </div>
+            <ul class="hero-right-list">
+              <li class="hero-right-block">&#35;organic</li>
+              <li class="hero-right-block">&#35;products</li>
+              <li class="hero-right-block">&#35;basket</li>
+              <li class="hero-right-block">&#35;fruits</li>
+            </ul>
           </div>
         </article>
         <article class="how-it-works" id="how-it-works">
@@ -428,7 +473,9 @@
           <div class="hiw-steps">
             <div class="hiw-steps-container">
               <div class="hiw-step-item">
-                <div class="hiw-first-step"><h3 class="hiw-name-one">First Step</h3></div>
+                <div class="hiw-first-step">
+                  <h3 class="hiw-name-one">First Step</h3>
+                </div>
                 <p class="hiw-step-paragraph">
                   Just choose the fruit you want to order by clicking on the checkboxes next to it
                 </p>
@@ -436,13 +483,17 @@
             </div>
             <div class="hiw-steps-container">
               <div class="hiw-step-item">
-                <div class="hiw-second-step"><h3 class="hiw-name-two">Second Step</h3></div>
+                <div class="hiw-second-step">
+                  <h3 class="hiw-name-two">Second Step</h3>
+                </div>
                 <p class="hiw-step-paragraph">Click on the basket and fill out the form.</p>
               </div>
             </div>
             <div class="hiw-steps-container">
               <div class="hiw-step-item">
-                <div class="hiw-third-step"><h3 class="hiw-name-three">Third Step</h3></div>
+                <div class="hiw-third-step">
+                  <h3 class="hiw-name-three">Third Step</h3>
+                </div>
                 <p class="hiw-step-paragraph">
                   Sit back and relax! Your fresh fruit basket will be delivered.
                 </p>
