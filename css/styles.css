@@ -1467,7 +1467,6 @@ header .container {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 80px;
-    max-width: none;
   }
 
   .footer-contacts-list {
@@ -1510,10 +1509,13 @@ header .container {
   }
 
   footer .container {
+    margin-left: auto;
+    margin-right: auto;
     height: 377px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 32px;
   }
   .footer-contacts-right {
     padding: 0;
