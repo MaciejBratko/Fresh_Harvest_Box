@@ -1730,9 +1730,9 @@ header .container {
   }
 
   footer .container {
-    padding: 0;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding: 0 32px;
+    margin-left: auto;
+    margin-right: auto;
     height: 475px;
     display: flex;
     flex-direction: column;
