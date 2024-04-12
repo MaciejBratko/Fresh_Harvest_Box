@@ -144,6 +144,217 @@ header .container {
   align-items: center;
 }
 
+/* -----------------------------------MODAL Your Order----------------------------------- */
+.modal-your-order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 335px;
+  max-height: 90vh;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 9999;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.modal-your-order::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.modal-content {
+  padding: 20px;
+  z-index: 999;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  stroke: #ae1332;
+  width: 14px;
+  height: 14px;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ae1332;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.fruits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fruit-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  width: 100%;
+  height: 119px;
+  padding: 20px;
+}
+
+.fruit-option.strawberry {
+  background-color: #f8766b;
+}
+
+.fruit-option.apple {
+  background-color: #edd251;
+}
+
+.fruit-option.fruits {
+  background-color: #9dc262;
+}
+
+.fruit-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.fruit-type {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.fruit-image {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  max-width: 50%;
+  height: auto;
+}
+
+.fruit-option input[type='checkbox'] {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.fruit-option input[type='checkbox']:checked {
+  background-color: #fff;
+}
+
+.form-fields {
+  margin-top: 40px;
+}
+
+.form-input,
+.form-textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  width: 100%;
+  padding: 14px 24px;
+  margin-bottom: 14px;
+}
+
+.form-textarea {
+  border-radius: 20px;
+  height: 132px;
+  resize: none;
+}
+
+.submit-button {
+  display: block;
+  border-radius: 100px;
+  padding: 12px 24px;
+  width: 100%;
+  background-color: #9dc162;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-your-order {
+    width: 704px;
+    max-height: 853px;
+  }
+
+  .modal-content {
+    padding: 40px;
+  }
+
+  .modal-title {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+
+  .fruits-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .fruit-option {
+    width: calc(33.33% - 13.33px);
+  }
+
+  .form-fields {
+    margin-top: 80px;
+  }
+
+  .modal-image {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    max-width: 50%;
+    height: auto;
+  }
+}
+
 /* Modal Thank You */
 
 .modal-thank-you {
@@ -158,7 +369,7 @@ header .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 999;
+  z-index: 888;
 }
 
 .is-open {
@@ -592,11 +803,17 @@ header .container {
 
 .footer-sm-icon {
   border: solid 1px;
+  border-color: #ae1332;
   border-radius: 10px;
   padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-sm-icon:hover,
+.footer-sm-icon:focus {
+  background-color: rgba(174, 19, 50, 0.1);
 }
 
 .footer-sm-icon-fill {
@@ -1068,8 +1285,14 @@ header .container {
 /* contacts */
 
 .contacts {
+  padding-left: 20;
+  padding-right: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-header {
@@ -1082,6 +1305,8 @@ header .container {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 43px;
 }
 
 .contacts-paragraf {
@@ -1145,6 +1370,11 @@ header .container {
 .berries-img {
   display: none;
 }
+
+.br-3 {
+  display: none;
+}
+
 /* media */
 
 @media (min-width: 768px) {
@@ -1185,6 +1415,248 @@ header .container {
   }
 }
 
+@media (min-width: 768px) {
+  .contacts {
+    padding-left: 32;
+    padding-right: 32px;
+    padding-top: 144x;
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-header {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 43px;
+  }
+
+  .contacts-paragraf {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 292px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .send-button {
+    border-radius: 100px;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #9dc162;
+    border: none;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+  }
+
+  .email-area {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+
+  .paragraf-input {
+    width: 492px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 144px;
+  }
+
+  .images-position {
+    width: 704px;
+    height: 559px;
+  }
+
+  .berries-img {
+    display: flex;
+  }
+
+  .img-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .br-1 {
+    display: none;
+  }
+
+  .br-2 {
+    display: none;
+  }
+
+  .br-3 {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contacts {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-header {
+    font-weight: 500;
+    font-size: 64px;
+
+    line-height: 64px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 43px;
+  }
+
+  .contacts-paragraf {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+
+    display: flex;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    width: 292px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .send-button {
+    border-radius: 100px;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #9dc162;
+    border: none;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+  }
+
+  .email-area {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+
+  .paragraf-input {
+    width: 492px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 80px;
+  }
+
+  .images-position {
+    width: 1216px;
+    height: 591px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .kiwi-img {
+    border-radius: 20px;
+    width: 792px;
+    height: 502px;
+  }
+
+  .berries-img {
+    display: flex;
+    border-radius: 20px;
+    width: 400px;
+    height: 502px;
+  }
+
+  .img-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+.br-1 {
+  display: none;
+}
+
+.br-2 {
+  display: none;
+}
+
+.br-3 {
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) {
   footer {
     height: 475px;
@@ -1203,16 +1675,15 @@ header .container {
   }
 
   footer .container {
-    padding: 0;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding: 0 32px;
+    margin-left: auto;
+    margin-right: auto;
     height: 475px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 80px;
-    max-width: none;
   }
 
   .footer-contacts-list {
@@ -1255,10 +1726,13 @@ header .container {
   }
 
   footer .container {
+    margin-left: auto;
+    margin-right: auto;
     height: 377px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 32px;
   }
   .footer-contacts-right {
     padding: 0;
