@@ -993,6 +993,68 @@ header .container {
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+    height: 1147px;
+  }
+
+  .hero-header {
+    font-size: 64px;
+    line-height: 64px;
+    width: 898px;
+  }
+
+  .hero-header br:last-child() {
+    display: none;
+  }
+
+  .hero-woman {
+    width: 486px;
+    height: 742px;
+    top: 122px;
+  }
+
+  .hero-woman-img {
+    width: 452px;
+    height: 702px;
+  }
+
+  .hero-stawberrys {
+    width: 120px;
+    height: 120px;
+    top: 39px;
+    left: 875px;
+  }
+
+  .hero-bananas {
+    /* transform: none; */
+    width: 183.21px;
+    /* height: 124.61px; */
+    top: 191px;
+    left: 193.62px;
+  }
+
+  .hero-paragraph {
+    top: 408px;
+    left: 30px;
+    width: 222px;
+  }
+
+  .watermelon-container {
+    top: 560px;
+    left: 30px;
+  }
+
+  .strawberry-basket-container {
+    left: auto;
+    right: 30px;
+    top: 336px;
+  }
+
+  .hero-right-list {
+    left: auto;
+    right: 30px;
+    top: 767px;
+  }
 }
 
 /* Footer */
@@ -1635,7 +1697,7 @@ header .container {
 
 @media (min-width: 768px) {
   .how-it-works {
-    width: 624px;
+    width: 100%;
     height: 633px;
   }
 
@@ -1663,7 +1725,7 @@ header .container {
 
 @media (min-width: 1280px) {
   .how-it-works {
-    width: 1216px;
+    width: 100%;
   }
 
   .hiw-steps {
