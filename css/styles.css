@@ -102,7 +102,6 @@ header {
 
 header .container {
   margin: auto;
-  padding: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -552,9 +551,6 @@ header .container {
   height: 24px;
   top: 6px;
   left: 6px;
-  gap: 0px;
-  border: 2px 0px 0px 0px;
-  opacity: 0px;
 }
 
 .thank-you-raspberries {
@@ -563,8 +559,6 @@ header .container {
   height: 176px;
   top: 40px;
   left: 64px;
-  gap: 0px;
-  opacity: 0px;
   padding: 0;
 }
 
@@ -572,20 +566,14 @@ header .container {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: Fixed (295px) px;
-  height: Hug (150px) px;
   top: 236px;
   left: 20px;
-  gap: 14px;
-  opacity: 0px;
 }
 
 .thank-you-header {
   text-align: center;
   width: 100%;
   height: 28px;
-  gap: 0px;
-  opacity: 0px;
   font-family: inherit;
   text-transform: uppercase;
   font-size: 28px;
@@ -599,8 +587,6 @@ header .container {
   text-align: center;
   width: 295px;
   height: 108px;
-  gap: 0px;
-  opacity: 1;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
@@ -651,7 +637,7 @@ header .container {
 }
 
 .x-icon-hamburger {
-  fill: rgba(174, 19, 50, 1)
+  fill: rgba(174, 19, 50, 1);
 }
 
 .menu-hamburger {
@@ -705,7 +691,7 @@ header .container {
   z-index: 2;
 }
 
-.hero-header br {
+.hero-header br:last-child {
   display: none;
   position: absolute;
   width: 1px;
@@ -988,7 +974,7 @@ header .container {
     line-height: 54px;
   }
 
-  .hero-header br {
+  .hero-header br:last-child {
     display: block;
   }
 
@@ -1068,10 +1054,6 @@ header .container {
     font-size: 64px;
     line-height: 64px;
     width: 898px;
-  }
-
-  .hero-header br:last-child() {
-    display: none;
   }
 
   .hero-woman {
@@ -1311,7 +1293,6 @@ header .container {
   width: 136px;
   height: 48px;
   border-radius: 200px;
-  padding: 15px, 42px;
   gap: 10px;
   background-color: #ae1332;
 }
@@ -1689,7 +1670,7 @@ header .container {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px #0000001a;
   position: relative;
   top: 43px;
 }
@@ -1704,7 +1685,7 @@ header .container {
   letter-spacing: -0.04em;
   text-align: center;
   color: #fff;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   display: none;
 }
 
@@ -1728,7 +1709,7 @@ header .container {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #9dc162;
   border: none;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: #fff;
 }
 
@@ -1809,9 +1790,9 @@ header .container {
 
 @media (min-width: 768px) {
   .contacts {
-    padding-left: 32;
+    padding-left: 32px;
     padding-right: 32px;
-    padding-top: 144x;
+    padding-top: 144px;
     padding-bottom: 144px;
     display: flex;
     flex-direction: column;
@@ -1827,7 +1808,7 @@ header .container {
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     position: relative;
     top: 43px;
   }
@@ -1836,13 +1817,12 @@ header .container {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-
     line-height: 18px;
     line-height: 1.28571;
     letter-spacing: -0.04em;
     text-align: center;
     color: #fff;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     display: flex;
   }
 
@@ -1865,7 +1845,7 @@ header .container {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #9dc162;
     border: none;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
   }
 
@@ -1936,14 +1916,12 @@ header .container {
   .contacts-header {
     font-weight: 500;
     font-size: 64px;
-
     line-height: 64px;
     line-height: 1;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: center;
-
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     position: relative;
     top: 43px;
   }
@@ -1952,13 +1930,11 @@ header .container {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-
     line-height: 18px;
     line-height: 1.28571;
     letter-spacing: -0.04em;
     text-align: center;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     display: flex;
   }
 
@@ -1981,7 +1957,7 @@ header .container {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #9dc162;
     border: none;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: #fff;
   }
 
