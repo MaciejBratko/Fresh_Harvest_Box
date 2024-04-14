@@ -89,7 +89,7 @@ p:last-child {
 
 header {
   margin: 0;
-  padding: 13px;
+  padding: 13px 0;
 }
 
 header {
@@ -100,13 +100,12 @@ header {
   justify-content: center;
 }
 
-header .container {
+header > div.container {
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  height: 24px;
 }
 
 .logo {
@@ -655,6 +654,10 @@ header .container {
   justify-content: center;
 }
 
+.left-nav {
+  display: none;
+}
+
 .left-nav-hamburger {
   display: flex;
   flex-direction: column;
@@ -669,6 +672,48 @@ header .container {
 }
 .basket-icon {
   fill: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .left-nav a {
+    color: #ae1332;
+  }
+
+  header {
+    background-color: white;
+    display: block;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header > div.container {
+    position: relative;
+    width: 704px;
+  }
+
+  .left-nav {
+    display: block;
+  }
+
+  .left-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header > div.container {
+    width: 1216px;
+  }
 }
 
 /* Hero */
