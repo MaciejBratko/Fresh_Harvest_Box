@@ -1164,7 +1164,8 @@ header > div.container {
   }
 
   .shop-now-button {
-    top: 825px;
+    transform: translateY(-25%);
+    top: 795px;
   }
 }
 
@@ -1448,18 +1449,18 @@ header > div.container {
 }
 
 .section-fruits {
-  padding-bottom: 80px;
+  padding-bottom: 37px;
 }
 
 @media only screen and (min-width: 768px) {
   .section-fruits {
-    padding-bottom: 144px;
+    padding-bottom: 101px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .section-fruits {
-    padding-bottom: 150px;
+    padding-bottom: 107px;
   }
 }
 
@@ -1778,6 +1779,7 @@ header > div.container {
   .how-it-works {
     height: 633px;
     width: 100%;
+    margin-bottom: 352px;
   }
 
   .hiw-first {
@@ -1805,6 +1807,7 @@ header > div.container {
 @media (min-width: 1280px) {
   .how-it-works {
     width: 100%;
+    margin-bottom: 227px;
   }
 
   .hiw-steps {
