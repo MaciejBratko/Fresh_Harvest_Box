@@ -104,6 +104,7 @@ header > div.container {
   justify-content: space-between;
   margin: auto;
   padding: 0;
+  height: 18px;
 }
 
 .logo {
@@ -138,6 +139,11 @@ header > div.container {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.basket button {
+  border: none;
+  background-color: inherit;
 }
 
 .modal-your-order {
@@ -666,10 +672,23 @@ header > div.container {
 }
 
 .basket-icon {
-  fill: rgba(255, 255, 255, 1);
+  fill: #ae1332;
+  display: none;
+}
+
+.menu-icon {
+  margin-top: 4px;
 }
 
 @media screen and (min-width: 768px) {
+  .basket-icon {
+    display: block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
   .left-nav a {
     color: #ae1332;
   }
@@ -1142,6 +1161,10 @@ header > div.container {
     left: auto;
     right: 30px;
     top: 767px;
+  }
+
+  .shop-now-button {
+    top: 825px;
   }
 }
 
