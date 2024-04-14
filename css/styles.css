@@ -1709,6 +1709,12 @@ header .container {
   display: none;
 }
 
+.send-button:hover,
+.send-button:focus {
+  color: #9dc262;
+  background-color: white;
+}
+
 .send-button {
   border-radius: 100px;
   padding: 15px 35px;
@@ -1800,7 +1806,7 @@ header .container {
   .contacts {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 144px;
+    
     padding-bottom: 144px;
     display: flex;
     flex-direction: column;
@@ -1914,7 +1920,6 @@ header .container {
 
 @media (min-width: 1280px) {
   .contacts {
-    padding-top: 150px;
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
@@ -1983,7 +1988,7 @@ header .container {
     letter-spacing: -0.04em;
     color: #fff;
   }
-
+ 
   .paragraf-input {
     width: 492px;
     height: 182px;
