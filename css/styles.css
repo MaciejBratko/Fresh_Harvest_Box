@@ -104,6 +104,7 @@ header > div.container {
   justify-content: space-between;
   margin: auto;
   padding: 0;
+  height: 18px;
 }
 
 .logo {
@@ -138,6 +139,11 @@ header > div.container {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.basket button {
+  border: none;
+  background-color: inherit;
 }
 
 .modal-your-order {
@@ -666,10 +672,23 @@ header > div.container {
 }
 
 .basket-icon {
-  fill: rgba(255, 255, 255, 1);
+  fill: #ae1332;
+  display: none;
+}
+
+.menu-icon {
+  margin-top: 4px;
 }
 
 @media screen and (min-width: 768px) {
+  .basket-icon {
+    display: block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
   .left-nav a {
     color: #ae1332;
   }
@@ -1143,6 +1162,11 @@ header > div.container {
     right: 30px;
     top: 767px;
   }
+
+  .shop-now-button {
+    transform: translateY(-25%);
+    top: 795px;
+  }
 }
 
 .footer {
@@ -1425,18 +1449,18 @@ header > div.container {
 }
 
 .section-fruits {
-  padding-bottom: 80px;
+  padding-bottom: 37px;
 }
 
 @media only screen and (min-width: 768px) {
   .section-fruits {
-    padding-bottom: 144px;
+    padding-bottom: 101px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .section-fruits {
-    padding-bottom: 150px;
+    padding-bottom: 107px;
   }
 }
 
@@ -1755,6 +1779,7 @@ header > div.container {
   .how-it-works {
     height: 633px;
     width: 100%;
+    margin-bottom: 352px;
   }
 
   .hiw-first {
@@ -1782,6 +1807,7 @@ header > div.container {
 @media (min-width: 1280px) {
   .how-it-works {
     width: 100%;
+    margin-bottom: 227px;
   }
 
   .hiw-steps {
