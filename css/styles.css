@@ -1750,8 +1750,13 @@ header > div.container {
   border-radius: 100px;
   width: 292px;
   height: 48px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   display: none;
+}
+
+.send-button:hover,
+.send-button:focus {
+  color: #9dc262;
+  background-color: white;
 }
 
 .send-button {
@@ -1759,7 +1764,6 @@ header > div.container {
   padding: 15px 35px;
   width: 102px;
   height: 48px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #9dc162;
   border: none;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1770,11 +1774,9 @@ header > div.container {
   background-color: transparent;
   border: none;
   text-align: center;
-
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-
   line-height: 18px;
   line-height: 1.28571;
   letter-spacing: -0.04em;
@@ -1845,7 +1847,7 @@ header > div.container {
   .contacts {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 144px;
+
     padding-bottom: 144px;
     display: flex;
     flex-direction: column;
@@ -1887,7 +1889,6 @@ header > div.container {
     border-radius: 100px;
     width: 292px;
     height: 48px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
   .send-button {
@@ -1895,7 +1896,6 @@ header > div.container {
     padding: 15px 35px;
     width: 102px;
     height: 48px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #9dc162;
     border: none;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1906,11 +1906,9 @@ header > div.container {
     background-color: transparent;
     border: none;
     text-align: center;
-
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-
     line-height: 18px;
     line-height: 1.28571;
     letter-spacing: -0.04em;
@@ -1959,7 +1957,6 @@ header > div.container {
 
 @media (min-width: 1280px) {
   .contacts {
-    padding-top: 150px;
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
@@ -1999,7 +1996,6 @@ header > div.container {
     border-radius: 100px;
     width: 292px;
     height: 48px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
   .send-button {
@@ -2007,7 +2003,7 @@ header > div.container {
     padding: 15px 35px;
     width: 102px;
     height: 48px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
     background: #9dc162;
     border: none;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -2066,17 +2062,6 @@ header > div.container {
     gap: 16px;
   }
 }
-/* .br-1 {
-  display: none;
-} */
-
-/* .br-2 {
-  display: none;
-} */
-
-/* .br-3 {
-  display: flex;
-} */
 
 @media only screen and (min-width: 768px) {
   footer {
