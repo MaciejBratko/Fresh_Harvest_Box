@@ -254,45 +254,6 @@
       </div>
     </div>
 
-    <div class="hamburger is-open-hamburger">
-      <div class="logo-hamburger-container">
-        <div class="logo-hamburger">
-          <div class="logo-container">
-            <a href="./index.html" class="logo">
-              <svg class="logo-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
-            <a class="logo-text" href="./index.html"> Fresh harvest box </a>
-          </div>
-          <button class="x-button-hamburger" type="button">
-            <svg class="x-icon-hamburger" width="12" height="12">
-              <use href="./images/icons.svg#icon-x"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="menu-hamburger">
-        <ul class="left-nav-hamburger">
-          <li>
-            <a href="#how-it-works" class="nav-link nav-link-ham">How It Works</a>
-          </li>
-          <li>
-            <a href="#fruits" class="nav-link nav-link-ham">Fruits</a>
-          </li>
-          <li>
-            <a href="#contacts" class="nav-link nav-link-ham">Contacts</a>
-          </li>
-          <li>
-            <svg class="basket-icon" width="28" height="28">
-              <use href="./images/icons.svg#icon-basket"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <header>
       <div class="container">
         <nav class="left-nav">
@@ -324,11 +285,50 @@
               <use href="./images/icons.svg#icon-basket"></use>
             </svg>
           </button>
-          <button type="button" class="ham-menu-button">
+          <button type="button">
             <svg class="menu-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
+        </div>
+
+        <div class="hamburger is-open-hamburger">
+          <div class="logo-hamburger-container">
+            <div class="logo-hamburger">
+              <div class="logo-container">
+                <a href="./index.html" class="logo">
+                  <svg class="logo-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                  </svg>
+                </a>
+                <a class="logo-text" href="./index.html"> Fresh harvest box </a>
+              </div>
+              <button class="x-button-hamburger" type="button">
+                <svg class="x-icon-hamburger" width="12" height="12">
+                  <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-hamburger">
+            <ul class="left-nav-hamburger">
+              <li>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+              </li>
+              <li>
+                <a href="#fruits" class="nav-link">Fruits</a>
+              </li>
+              <li>
+                <a href="#contacts" class="nav-link">Contacts</a>
+              </li>
+              <li>
+                <svg class="basket-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-basket"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
