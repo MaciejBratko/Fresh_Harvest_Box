@@ -96,7 +96,6 @@ header {
   justify-content: center;
   margin: 0;
   padding: 13px 0;
-  z-index: 1;
 }
 
 header > div.container {
@@ -119,7 +118,6 @@ header > div.container {
 }
 
 .logo-container {
-  pointer-events: all;
   display: inline-flex;
   font-family: DM Sans;
   font-size: 14px;
@@ -128,7 +126,7 @@ header > div.container {
   letter-spacing: -0.04em;
   line-height: 18px;
   text-transform: uppercase;
-  /* z-index: 0; */
+  z-index: 999;
 }
 
 .logo-container a:active,
@@ -624,12 +622,10 @@ header > div.container {
 
 .logo-hamburger-container {
   background-color: white;
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .logo-hamburger {
-  pointer-events: none;
-  /* opacity: 0; */
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
@@ -642,16 +638,16 @@ header > div.container {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+  z-index: 10;
 }
 
 .x-button-hamburger {
-  pointer-events: all;
   background-color: transparent;
   border: none;
   cursor: pointer;
   height: 24px;
   width: 24px;
-  z-index: 999;
+  z-index: 10000;
 }
 
 .x-icon-hamburger {
