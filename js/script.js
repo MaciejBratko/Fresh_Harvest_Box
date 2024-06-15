@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   hamMenuButton.addEventListener('click', () => {
-    hamburger.classList.add('is-open-hamburger');
+    hamburger.classList.toggle('is-open-hamburger');
   });
 
   navLinksHam.forEach(link => {
